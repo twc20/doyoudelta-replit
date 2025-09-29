@@ -1,10 +1,26 @@
 const brands = [
-  "Michelin",
-  "Bridgestone", 
-  "Goodyear",
-  "Continental",
-  "Yokohama",
-  "BFGoodrich"
+  { name: "BFGoodrich", logo: "/logos/tires/bfgoodrich.png" },
+  { name: "Bridgestone", logo: "/logos/tires/bridgestone.png" },
+  { name: "Carlisle", logo: "/logos/tires/carlisle.png" },
+  { name: "Continental", logo: "/logos/tires/continental.png" },
+  { name: "Cooper", logo: "/logos/tires/cooper.png" },
+  { name: "Falken", logo: "/logos/tires/falken.png" },
+  { name: "Firestone", logo: "/logos/tires/firestone.png" },
+  { name: "General", logo: "/logos/tires/general.png" },
+  { name: "Goodyear", logo: "/logos/tires/goodyear.png" },
+  { name: "Haida", logo: "/logos/tires/haida.png" },
+  { name: "Hankook", logo: "/logos/tires/hankook.png" },
+  { name: "Hercules", logo: "/logos/tires/hercules.png" },
+  { name: "Ironman", logo: "/logos/tires/ironman.png" },
+  { name: "Kumho", logo: "/logos/tires/kumho.png" },
+  { name: "Mastercraft", logo: "/logos/tires/mastercraft.png" },
+  { name: "Michelin", logo: "/logos/tires/michelin.png" },
+  { name: "Mickey Thompson", logo: "/logos/tires/mickeythompson.png" },
+  { name: "MileKing", logo: "/logos/tires/mileking.png" },
+  { name: "Nexen", logo: "/logos/tires/nexen.png" },
+  { name: "Nitto", logo: "/logos/tires/nitto.png" },
+  { name: "Pirelli", logo: "/logos/tires/pirelli.png" },
+  { name: "Samson", logo: "/logos/tires/samson.png" }
 ];
 
 export function TireBrands() {
@@ -20,16 +36,27 @@ export function TireBrands() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6 items-center">
           {brands.map((brand, index) => (
             <div 
               key={index} 
-              className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-20 border border-gray-200 hover:shadow-md transition-shadow"
-              data-testid={`brand-${brand.toLowerCase()}`}
+              className="bg-white p-4 rounded-lg shadow-sm flex items-center justify-center h-24 border border-gray-200 hover:shadow-md transition-shadow"
+              data-testid={`brand-${brand.name.toLowerCase().replace(/\s+/g, '-')}`}
             >
-              <span className="text-gray-700 font-medium text-lg">{brand}</span>
+              <img 
+                src={brand.logo} 
+                alt={`${brand.name} tires`}
+                className="max-w-full max-h-16 object-contain"
+                loading="lazy"
+              />
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <p className="text-gray-600">
+            Don't see your preferred brand? <a href="/contact" className="text-red-600 hover:text-red-700 font-medium">Contact us</a> - we can special order most tire brands!
+          </p>
         </div>
       </div>
     </section>
