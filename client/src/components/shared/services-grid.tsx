@@ -71,22 +71,24 @@ export function ServicesGrid() {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Card key={index} className="service-card bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                    <IconComponent className="w-6 h-6 text-red-600" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{service.title}</h3>
-                  <p className="text-gray-600 text-sm mb-4">{service.description}</p>
-                  <Link 
-                    href={service.href} 
-                    className="text-red-600 hover:text-red-700 font-medium text-sm inline-flex items-center"
-                    data-testid={`link-service-${index}`}
-                  >
-                    Learn More <ArrowRight className="w-4 h-4 ml-1" />
-                  </Link>
-                </CardContent>
-              </Card>
+              <Link 
+                key={index} 
+                href={service.href}
+                data-testid={`link-service-${index}`}
+              >
+                <Card className="service-card bg-white border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
+                  <CardContent className="p-6">
+                    <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                      <IconComponent className="w-6 h-6 text-red-600" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{service.title}</h3>
+                    <p className="text-gray-600 text-sm mb-4">{service.description}</p>
+                    <span className="text-red-600 hover:text-red-700 font-medium text-sm inline-flex items-center">
+                      Learn More <ArrowRight className="w-4 h-4 ml-1" />
+                    </span>
+                  </CardContent>
+                </Card>
+              </Link>
             );
           })}
         </div>
