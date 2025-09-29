@@ -580,6 +580,211 @@ export const blogArticles: BlogArticle[] = [
     category: "Safety",
     tags: ["suspension", "safety", "shocks", "struts", "handling"],
     featured: false
+  },
+  {
+    id: "16",
+    title: "Northern New Mexico Winter Driving: Mastering Mud, Snow, and Ice",
+    slug: "northern-nm-winter-driving",
+    excerpt: "Northern New Mexico winter conditions demand proper tires and smart driving. Learn how to handle mud, snow, ice, and wet roads safely while getting maximum performance from your tires.",
+    content: `
+      <p>Winter in Northern New Mexico presents unique challenges that test both your vehicle and driving skills. From sudden snowstorms in Farmington to muddy back roads in Grants, and icy morning commutes in Gallup, understanding how to handle these conditions—and choosing the right tires—can mean the difference between arriving safely and calling a tow truck.</p>
+      
+      <h2>Understanding Northern NM Winter Conditions</h2>
+      <p>The Four Corners region experiences diverse winter weather:</p>
+      <ul>
+        <li><strong>Elevation changes:</strong> Temperature and conditions vary dramatically from lower valleys to mountain passes</li>
+        <li><strong>Unpredictable weather:</strong> Sunny mornings can turn into snowstorms by afternoon</li>
+        <li><strong>Freeze-thaw cycles:</strong> Daytime melting creates muddy conditions that freeze overnight into treacherous ice</li>
+        <li><strong>Remote roads:</strong> Many areas have limited road maintenance and cell service</li>
+        <li><strong>Desert meets mountain:</strong> Dry desert roads can quickly become snow-covered at higher elevations</li>
+      </ul>
+      
+      <h2>Choosing the Right Tires for Northern NM Winters</h2>
+      
+      <h3>All-Season Tires: The Compromise</h3>
+      <p><strong>Best for:</strong> Mild winter conditions in lower elevations (Grants, Gallup)</p>
+      <p>All-season tires work adequately in light snow and wet conditions but have limitations:</p>
+      <ul>
+        <li>✓ Good wet road traction</li>
+        <li>✓ Acceptable in light snow (1-3 inches)</li>
+        <li>✓ No need to swap seasonally</li>
+        <li>✗ Poor performance in heavy snow or ice</li>
+        <li>✗ Rubber hardens below 40°F, reducing grip</li>
+      </ul>
+      
+      <h3>Winter/Snow Tires: Maximum Traction</h3>
+      <p><strong>Best for:</strong> Frequent snow, mountain driving, or severe winter conditions</p>
+      <p>Winter tires are engineered specifically for cold weather performance:</p>
+      <ul>
+        <li>✓ Special rubber compound stays flexible below 40°F</li>
+        <li>✓ Deep tread with thousands of tiny slits (sipes) for ice grip</li>
+        <li>✓ 25-50% better snow traction than all-seasons</li>
+        <li>✓ Significantly shorter stopping distances on ice</li>
+        <li>✓ Excellent wet road performance</li>
+        <li>✗ Must be changed out in spring (wear quickly in heat)</li>
+        <li>✗ Higher upfront cost (but save money long-term)</li>
+      </ul>
+      
+      <h3>All-Terrain and Mud-Terrain Tires</h3>
+      <p><strong>Best for:</strong> Trucks/SUVs that need off-road capability plus winter traction</p>
+      <ul>
+        <li>✓ Excellent for muddy dirt roads common in Northern NM</li>
+        <li>✓ Good snow traction with deep, aggressive tread</li>
+        <li>✓ Self-cleaning tread clears mud effectively</li>
+        <li>✓ Many carry the Three-Peak Mountain Snowflake rating</li>
+        <li>✗ Noisier on pavement than winter tires</li>
+        <li>✗ Less effective on ice than dedicated winter tires</li>
+      </ul>
+      
+      <h2>The Three-Peak Mountain Snowflake Symbol</h2>
+      <p>Look for this symbol on tire sidewalls. It indicates the tire meets strict snow traction performance requirements. For Northern NM winters, we strongly recommend tires with this rating, whether you choose winter tires or all-terrain tires.</p>
+      
+      <h2>Driving on Snow: Make Your Tires Work</h2>
+      
+      <h3>Before You Drive</h3>
+      <ul>
+        <li><strong>Check tire pressure:</strong> Cold weather reduces pressure by 1 PSI for every 10°F drop. Underinflated tires have poor traction</li>
+        <li><strong>Inspect tread depth:</strong> You need at least 6/32" for snow (more is better). The penny test isn't enough for winter</li>
+        <li><strong>Clear snow completely:</strong> Remove all snow from tires, wheel wells, and vehicle body</li>
+        <li><strong>Start smoothly:</strong> Rapid acceleration just spins tires uselessly</li>
+      </ul>
+      
+      <h3>Driving Techniques for Snow</h3>
+      <ul>
+        <li><strong>Accelerate gently:</strong> Easy throttle inputs allow tires to grip instead of spin</li>
+        <li><strong>Increase following distance:</strong> Triple your normal distance—stopping takes much longer</li>
+        <li><strong>Brake early and softly:</strong> Hard braking locks wheels and eliminates steering control</li>
+        <li><strong>Avoid cruise control:</strong> You need instant throttle control in changing conditions</li>
+        <li><strong>Look ahead:</strong> Anticipate stops and turns well in advance</li>
+        <li><strong>If stuck:</strong> Rock gently back and forth, don't floor it—spinning tires dig deeper</li>
+      </ul>
+      
+      <h3>Understanding Snow Types</h3>
+      <p><strong>Fresh, powdery snow:</strong> Easiest to drive in, tires can bite through to pavement</p>
+      <p><strong>Packed snow:</strong> Slippery but predictable, maintain steady speed and smooth inputs</p>
+      <p><strong>Slush:</strong> Reduces traction and can cause hydroplaning, slow down significantly</p>
+      
+      <h2>Ice: The Most Dangerous Condition</h2>
+      
+      <h3>Types of Ice in Northern NM</h3>
+      <p><strong>Black ice:</strong> Nearly invisible, forms on bridges and shaded areas after sunset. Extremely dangerous.</p>
+      <p><strong>Morning ice:</strong> Overnight freezing creates patches in low spots and shadows</p>
+      <p><strong>Refrozen slush:</strong> Rough surface provides slightly better grip than smooth ice</p>
+      
+      <h3>Driving on Ice</h3>
+      <ul>
+        <li><strong>Slow down significantly:</strong> Even winter tires can't overcome physics on ice</li>
+        <li><strong>Test your traction:</strong> In safe, open areas, test braking to understand available grip</li>
+        <li><strong>Avoid sudden movements:</strong> Smooth steering, braking, and acceleration are critical</li>
+        <li><strong>Stay off the brakes:</strong> If you start sliding, ease off brakes and steer where you want to go</li>
+        <li><strong>Watch for shiny pavement:</strong> If the road looks wet and shiny but other cars aren't leaving tracks, it's ice</li>
+      </ul>
+      
+      <h2>Muddy Roads: Common in Four Corners Region</h2>
+      
+      <h3>Why Mud is Challenging</h3>
+      <p>Northern NM's clay-rich soil turns into slippery, sticky mud that even 4WD trucks struggle with. Add in dirt roads used for ranching, hunting, and recreation, and mud becomes a regular winter hazard.</p>
+      
+      <h3>Best Tires for Mud</h3>
+      <ul>
+        <li><strong>Aggressive all-terrain tires:</strong> Wide spaces between tread blocks allow mud to clear</li>
+        <li><strong>Mud-terrain tires:</strong> Ultimate mud performance with self-cleaning tread</li>
+        <li><strong>Avoid:</strong> Street tires and highway tires—they pack with mud and lose all traction</li>
+      </ul>
+      
+      <h3>Driving Techniques for Mud</h3>
+      <ul>
+        <li><strong>Maintain momentum:</strong> Keep moving at steady speed, stopping often means getting stuck</li>
+        <li><strong>Use 4WD LOW if equipped:</strong> Provides maximum torque and control</li>
+        <li><strong>Stay in existing tracks:</strong> Follow previous vehicle tracks when possible</li>
+        <li><strong>Avoid spinning tires:</strong> Tire spin digs you deeper—gentle, steady throttle works best</li>
+        <li><strong>Air down slightly:</strong> Reducing tire pressure 5-10 PSI increases traction (re-inflate when back on pavement)</li>
+        <li><strong>If stuck:</strong> Use floor mats, branches, or rocks under tires for traction</li>
+      </ul>
+      
+      <h2>Wet Roads: Don't Underestimate Them</h2>
+      
+      <h3>Hydroplaning Risk</h3>
+      <p>Wet roads, especially after a dry spell, are surprisingly dangerous in Northern NM:</p>
+      <ul>
+        <li>Oil residue rises to surface with first rain, creating slick conditions</li>
+        <li>Worn tires can hydroplane at speeds as low as 35 MPH</li>
+        <li>Standing water in low spots and parking lots is common</li>
+      </ul>
+      
+      <h3>Tire Maintenance for Wet Performance</h3>
+      <ul>
+        <li><strong>Tread depth matters:</strong> Worn tires can't channel water away, causing hydroplaning</li>
+        <li><strong>Proper inflation:</strong> Underinflated tires have less contact with road in center</li>
+        <li><strong>Alignment:</strong> Poor alignment causes uneven wear that reduces wet traction</li>
+        <li><strong>Tire age:</strong> Old tires lose grip even with good tread depth</li>
+      </ul>
+      
+      <h3>Driving in Rain</h3>
+      <ul>
+        <li><strong>Slow down:</strong> Reduce speed by 5-10 MPH in light rain, more in heavy downpours</li>
+        <li><strong>Avoid standing water:</strong> Even shallow water can cause hydroplaning</li>
+        <li><strong>Turn off cruise control:</strong> You need immediate throttle response</li>
+        <li><strong>Increase following distance:</strong> Wet stopping distance is 2-3 times longer</li>
+        <li><strong>If hydroplaning:</strong> Ease off gas, don't brake, steer straight until tires regain grip</li>
+      </ul>
+      
+      <h2>Vehicle Preparation for Northern NM Winters</h2>
+      
+      <h3>Essential Equipment</h3>
+      <ul>
+        <li>Ice scraper and snow brush</li>
+        <li>Small shovel</li>
+        <li>Bag of sand or cat litter for traction</li>
+        <li>Emergency blankets and warm clothes</li>
+        <li>Flashlight with extra batteries</li>
+        <li>Jumper cables or jump starter</li>
+        <li>First aid kit</li>
+        <li>Non-perishable snacks and water</li>
+        <li>Phone charger</li>
+        <li>Tire chains (if traveling mountain passes)</li>
+      </ul>
+      
+      <h3>Vehicle Maintenance</h3>
+      <ul>
+        <li><strong>Battery test:</strong> Cold weather reduces battery capacity by 50%</li>
+        <li><strong>Antifreeze:</strong> Check concentration, should protect to -30°F minimum</li>
+        <li><strong>Wiper blades:</strong> Replace with winter blades for better snow clearing</li>
+        <li><strong>Lights:</strong> Ensure all lights work—visibility is critical in winter</li>
+        <li><strong>Heating system:</strong> Confirm heat and defrost work properly</li>
+      </ul>
+      
+      <h2>When to Stay Home</h2>
+      <p>Sometimes the smartest decision is not to drive. Consider staying off the roads when:</p>
+      <ul>
+        <li>Active snowstorm with visibility under 1/4 mile</li>
+        <li>Black ice warnings issued</li>
+        <li>Your vehicle lacks proper tires for conditions</li>
+        <li>Roads haven't been plowed or treated</li>
+        <li>You feel uncomfortable or unprepared</li>
+      </ul>
+      
+      <h2>Get Winter-Ready at Delta Tire</h2>
+      <p>Don't wait for the first snowfall to prepare your vehicle. Delta Tire offers comprehensive winter services at all four Northern New Mexico locations:</p>
+      
+      <ul>
+        <li><strong>Winter tire sales and installation:</strong> We stock top brands with Three-Peak ratings</li>
+        <li><strong>Aggressive all-terrain tires:</strong> Perfect for trucks that need mud and snow capability</li>
+        <li><strong>Free tire inspection:</strong> Check tread depth and condition</li>
+        <li><strong>Battery testing:</strong> Ensure your battery can handle cold starts</li>
+        <li><strong>Complete vehicle inspection:</strong> Identify potential problems before winter hits</li>
+        <li><strong>Expert advice:</strong> Our team knows Northern NM conditions and can recommend the right tires for your needs</li>
+      </ul>
+      
+      <p>Visit Delta Tire in Grants, Gallup, or Farmington before winter weather arrives. We'll help you choose the right tires for Northern New Mexico's challenging conditions and ensure your vehicle is ready for whatever winter throws at you.</p>
+      
+      <p>Remember: The best winter driving technique is proper preparation. Good tires aren't expensive—they're an investment in your safety and peace of mind.</p>
+    `,
+    author: "Delta Tire Team",
+    publishedDate: "2025-09-29",
+    category: "Safety",
+    tags: ["winter driving", "northern new mexico", "snow", "mud", "ice", "tire safety", "four corners"],
+    featured: false
   }
 ];
 
