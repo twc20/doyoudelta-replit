@@ -7,10 +7,17 @@ import { Footer } from "@/components/shared/footer";
 import { ServicesGrid } from "@/components/shared/services-grid";
 import { LocationsGrid } from "@/components/shared/locations-grid";
 import { TireBrands } from "@/components/shared/tire-brands";
+import { SEO, localBusinessData } from "@/components/shared/seo";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Delta Tire - Professional Tire Service & Auto Repair | NM & AZ"
+        description="Delta Tire provides professional tire service, auto repair, oil changes, brake repair, and wheel alignments across New Mexico and Arizona. ASE certified technicians serving Grants, Gallup, Farmington, and Eagar. Open today - call now!"
+        keywords="tire service, auto repair, oil change, brake repair, wheel alignment, truck accessories, ASE certified, New Mexico, Arizona, Grants, Gallup, Farmington, Eagar, Delta Tire"
+        structuredData={localBusinessData}
+      />
       <Header />
 
       {/* Hero Section */}

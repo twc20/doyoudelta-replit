@@ -157,11 +157,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission
   app.post("/api/contact", async (req, res) => {
     try {
-      const { name, email, phone, message, service } = req.body;
+      const { contactFormSchema } = await import("@shared/schema");
+      const validation = contactFormSchema.safeParse(req.body);
       
-      if (!name || !email || !message) {
-        return res.status(400).json({ message: "Name, email, and message are required" });
+      if (!validation.success) {
+        return res.status(400).json({ 
+          message: "Validation failed",
+          errors: validation.error.errors 
+        });
       }
+      
+      const { name, email, phone, message, service } = validation.data;
       
       // TODO: Implement email sending service (SendGrid, AWS SES, etc.)
       // For now, just log the contact submission
