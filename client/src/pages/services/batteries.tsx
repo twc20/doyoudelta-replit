@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Calendar, CheckCircle, Battery, Zap, AlertTriangle, Settings } from "lucide-react";
 import { SEO } from "@/components/shared/seo";
+import { CallButton } from "@/components/shared/location-selector-dialog";
 
 export default function BatteriesService() {
   return (
@@ -24,17 +25,11 @@ export default function BatteriesService() {
             Professional battery replacement, alternator service, starter repair, and complete electrical diagnostics.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
+            <CallButton 
               size="lg" 
               className="bg-white text-red-600 hover:bg-gray-100 font-semibold" 
-              asChild
-              data-testid="button-call-batteries"
-            >
-              <a href="tel:505-287-7946">
-                <Phone className="w-5 h-5 mr-2" />
-                Call Now
-              </a>
-            </Button>
+              testId="button-call-batteries"
+            />
             <Button 
               size="lg" 
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-red-600 font-semibold" 
@@ -252,17 +247,14 @@ export default function BatteriesService() {
             at all 4 convenient locations across New Mexico & Arizona.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
+            <CallButton 
               size="lg" 
               className="bg-white text-red-600 hover:bg-gray-100 font-semibold" 
-              asChild
-              data-testid="button-cta-call-batteries"
+              testId="button-cta-call-batteries"
             >
-              <a href="tel:505-287-7946">
-                <Phone className="w-5 h-5 mr-2" />
-                Call (505) 287-7946
-              </a>
-            </Button>
+              <Phone className="w-5 h-5 mr-2" />
+              Call Now
+            </CallButton>
             <Button 
               size="lg" 
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-red-600 font-semibold" 

@@ -8,6 +8,7 @@ import { ServicesGrid } from "@/components/shared/services-grid";
 import { LocationsGrid } from "@/components/shared/locations-grid";
 import { TireBrands } from "@/components/shared/tire-brands";
 import { SEO, localBusinessData } from "@/components/shared/seo";
+import { CallButton } from "@/components/shared/location-selector-dialog";
 
 export default function Home() {
   return (
@@ -41,17 +42,14 @@ export default function Home() {
               Professional <strong>tire service</strong>, <strong>brake repair</strong>, <strong>oil changes</strong>, <strong>wheel alignments</strong>, and <strong>truck accessories</strong> in New Mexico & Arizona. We treat your car like our car. <strong>Open today</strong> - call now!
             </h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-white text-red-600 hover:bg-gray-100 font-semibold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all" 
-                asChild
-                data-testid="button-call-now"
+              <CallButton 
+                size="lg"
+                className="bg-white text-red-600 hover:bg-gray-100 font-semibold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all"
+                testId="button-call-now"
               >
-                <a href="tel:505-287-7946">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Now - Open Today!
-                </a>
-              </Button>
+                <Phone className="w-5 h-5 mr-2" />
+                Call Now - Open Today!
+              </CallButton>
               <Button 
                 size="lg" 
                 className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-red-600 font-semibold text-lg px-8 py-4 rounded-xl transition-all" 
@@ -291,17 +289,14 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 font-semibold text-lg transition-colors" 
-              asChild
-              data-testid="button-call-final"
+            <CallButton 
+              size="lg"
+              className="bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 font-semibold text-lg transition-colors"
+              testId="button-call-final"
             >
-              <a href="tel:505-287-7946">
-                <Phone className="w-5 h-5 mr-2" />
-                Call Now - (505) 287-7946
-              </a>
-            </Button>
+              <Phone className="w-5 h-5 mr-2" />
+              Call Now - Open Today!
+            </CallButton>
             <Button 
               size="lg" 
               className="bg-gray-100 text-gray-700 px-8 py-4 rounded-lg hover:bg-gray-200 font-semibold text-lg transition-colors" 

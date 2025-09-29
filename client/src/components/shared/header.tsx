@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'wouter';
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Menu, X } from "lucide-react";
+import { CallButton } from "@/components/shared/location-selector-dialog";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -132,14 +133,13 @@ export function Header() {
 
               {/* Mobile CTA Buttons */}
               <div className="pt-4 border-t border-gray-200 space-y-3">
-                <a
-                  href="tel:505-287-7946"
-                  className="bg-red-600 text-white px-4 py-3 rounded-lg hover:bg-red-700 font-medium transition-colors flex items-center justify-center"
-                  data-testid="button-mobile-call"
+                <CallButton
+                  className="bg-red-600 text-white px-4 py-3 rounded-lg hover:bg-red-700 font-medium transition-colors w-full"
+                  testId="button-mobile-call"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   Call Now - Open Today!
-                </a>
+                </CallButton>
                 <Link
                   href="/locations"
                   className="bg-gray-100 text-gray-700 px-4 py-3 rounded-lg hover:bg-gray-200 font-medium transition-colors flex items-center justify-center"

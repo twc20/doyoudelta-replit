@@ -3,6 +3,7 @@ import { Footer } from "@/components/shared/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Calendar, CheckCircle, Droplet, Shield, Clock } from "lucide-react";
+import { CallButton } from "@/components/shared/location-selector-dialog";
 
 export default function OilChangeService() {
   return (
@@ -19,17 +20,11 @@ export default function OilChangeService() {
             Professional oil changes and preventive maintenance to keep your engine running smooth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-white text-red-600 hover:bg-gray-100 font-semibold" 
-              asChild
-              data-testid="button-call-oil"
-            >
-              <a href="tel:505-287-7946">
-                <Phone className="w-5 h-5 mr-2" />
-                Call Now
-              </a>
-            </Button>
+            <CallButton 
+              size="lg"
+              className="bg-white text-red-600 hover:bg-gray-100 font-semibold"
+              testId="button-call-oil"
+            />
             <Button 
               size="lg" 
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-red-600 font-semibold" 
@@ -179,14 +174,14 @@ export default function OilChangeService() {
             Quick, professional oil changes at any of our 4 locations. Walk-ins welcome or schedule ahead for faster service.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-red-600 text-white hover:bg-red-700 font-semibold" 
-              asChild
-              data-testid="button-call-oil-footer"
+            <CallButton 
+              size="lg"
+              className="bg-red-600 text-white hover:bg-red-700 font-semibold"
+              testId="button-call-oil-footer"
             >
-              <a href="tel:505-287-7946">Call: (505) 287-7946</a>
-            </Button>
+              <Phone className="w-5 h-5 mr-2" />
+              Call Now
+            </CallButton>
             <Button 
               size="lg" 
               variant="outline"

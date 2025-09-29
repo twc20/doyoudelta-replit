@@ -3,6 +3,7 @@ import { Footer } from "@/components/shared/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Calendar, Truck, Shield, Wrench, Star } from "lucide-react";
+import { CallButton } from "@/components/shared/location-selector-dialog";
 
 export default function TruckAccessoriesService() {
   return (
@@ -19,17 +20,11 @@ export default function TruckAccessoriesService() {
             Customize and protect your truck with professional accessory installation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
+            <CallButton 
               size="lg" 
               className="bg-white text-red-600 hover:bg-gray-100 font-semibold" 
-              asChild
-              data-testid="button-call-truck"
-            >
-              <a href="tel:505-287-7946">
-                <Phone className="w-5 h-5 mr-2" />
-                Call Now
-              </a>
-            </Button>
+              testId="button-call-truck"
+            />
             <Button 
               size="lg" 
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-red-600 font-semibold" 
@@ -216,14 +211,14 @@ export default function TruckAccessoriesService() {
             Contact us to discuss your truck accessory needs. We'll help you choose the right products and schedule professional installation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
+            <CallButton 
               size="lg" 
               className="bg-red-600 text-white hover:bg-red-700 font-semibold" 
-              asChild
-              data-testid="button-call-truck-footer"
+              testId="button-call-truck-footer"
             >
-              <a href="tel:505-287-7946">Call: (505) 287-7946</a>
-            </Button>
+              <Phone className="w-5 h-5 mr-2" />
+              Call Now
+            </CallButton>
             <Button 
               size="lg" 
               variant="outline"
