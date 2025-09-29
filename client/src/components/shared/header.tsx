@@ -37,6 +37,9 @@ export function Header() {
             <Link href="/faq" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               FAQ
             </Link>
+            <Link href="/blog" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
+              Blog
+            </Link>
             <Link href="/fleet" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               Fleet
             </Link>
@@ -100,6 +103,13 @@ export function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 FAQ
+              </Link>
+              <Link
+                href="/blog"
+                className="text-gray-700 hover:text-red-600 font-medium py-2 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
               </Link>
               <Link
                 href="/fleet"

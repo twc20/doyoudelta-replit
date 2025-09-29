@@ -30,13 +30,23 @@ Delta Tire is a multi-location automotive service business operating across New 
 - Includes popular brands section and tire selection guidance
 
 **Blog & Content Hub**
+- Added "Blog" to main navigation menu (desktop and mobile)
 - Created blog articles data file (`shared/blog-articles.ts`) with 12 automotive articles
 - Built full-featured blog page (`/blog`) with:
   - Featured articles section
   - Category filtering (Tire Maintenance, Safety, Maintenance Tips, etc.)
   - Search functionality (by title, excerpt, tags)
   - Newsletter signup
-- All articles include metadata: author, date, category, tags, excerpts
+- All articles include metadata: author, date (updated to Sept 2025), category, tags, excerpts
+- Individual article pages (`/blog/:slug`) with:
+  - Full article content with HTML formatting
+  - Related articles section
+  - Call-to-action sections for appointments and locations
+  - Back navigation and SEO optimization
+- Featured articles have comprehensive content:
+  - "When Should You Replace Your Tires? 5 Warning Signs"
+  - "Oil Change Myths: How Often Do You Really Need Service?"
+  - "All-Terrain vs. Mud-Terrain Tires: Which is Right for Your Truck?"
 
 **SMS-Based Appointment Booking**
 - Completely redesigned appointments page from form-based to SMS-based booking
@@ -47,6 +57,19 @@ Delta Tire is a multi-location automotive service business operating across New 
   - Pre-programmed message: "Hey, I was on your website and want to schedule an appointment for [service] at your [location] location."
   - Mobile-first design with "How It Works" guide
   - Fallback phone numbers for direct calling
+
+**Call or Text Now Feature**
+- Created location selector dialog for all call buttons site-wide
+- Shows popup with all 4 locations when "Call or Text Now" is clicked
+- Each location displays:
+  - Location name and address
+  - Phone number
+  - Side-by-side "Call Now" and "Text Now" buttons
+- Implemented on:
+  - Homepage CTAs (2 buttons)
+  - All 8 service pages
+  - Mobile header menu
+- Uses `tel:` and `sms:` protocols for native mobile integration
 
 ## User Preferences
 

@@ -22,6 +22,7 @@ import BatteriesService from "@/pages/services/batteries";
 import ACHeaterService from "@/pages/services/ac-heater";
 import TireBrandsPage from "@/pages/tire-brands";
 import Blog from "@/pages/blog";
+import BlogArticle from "@/pages/blog-article";
 import Careers from "@/pages/careers";
 import NotFound from "@/pages/not-found";
 
@@ -40,6 +41,7 @@ function Router() {
       <Route path="/services/ac-heater" component={ACHeaterService} />
       <Route path="/tire-brands" component={TireBrandsPage} />
       <Route path="/blog" component={Blog} />
+      <Route path="/blog/:slug" component={BlogArticle} />
       <Route path="/careers" component={Careers} />
       <Route path="/locations" component={Locations} />
       <Route path="/about" component={About} />

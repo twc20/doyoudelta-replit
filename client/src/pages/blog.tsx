@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { Button } from "@/components/ui/button";
@@ -74,13 +75,15 @@ export default function Blog() {
                         })}
                       </div>
                     </div>
-                    <Button 
-                      className="w-full bg-red-600 hover:bg-red-700 text-white" 
-                      data-testid={`button-read-${article.slug}`}
-                    >
-                      Read Article
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
+                    <Link href={`/blog/${article.slug}`}>
+                      <Button 
+                        className="w-full bg-red-600 hover:bg-red-700 text-white" 
+                        data-testid={`button-read-${article.slug}`}
+                      >
+                        Read Article
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
@@ -162,14 +165,16 @@ export default function Blog() {
                         </Badge>
                       ))}
                     </div>
-                    <Button 
-                      variant="outline" 
-                      className="w-full hover:bg-red-50 hover:text-red-600 hover:border-red-600"
-                      data-testid={`button-read-${article.slug}`}
-                    >
-                      Read More
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
+                    <Link href={`/blog/${article.slug}`}>
+                      <Button 
+                        variant="outline" 
+                        className="w-full hover:bg-red-50 hover:text-red-600 hover:border-red-600"
+                        data-testid={`button-read-${article.slug}`}
+                      >
+                        Read More
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               ))}
