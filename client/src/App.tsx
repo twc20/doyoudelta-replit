@@ -18,6 +18,8 @@ import BrakesService from "@/pages/services/brakes";
 import AlignmentService from "@/pages/services/alignment";
 import AutoRepairService from "@/pages/services/auto-repair";
 import TruckAccessoriesService from "@/pages/services/truck-accessories";
+import BatteriesService from "@/pages/services/batteries";
+import ACHeaterService from "@/pages/services/ac-heater";
 import TireBrandsPage from "@/pages/tire-brands";
 import Blog from "@/pages/blog";
 import Careers from "@/pages/careers";
@@ -34,6 +36,8 @@ function Router() {
       <Route path="/services/alignment" component={AlignmentService} />
       <Route path="/services/auto-repair" component={AutoRepairService} />
       <Route path="/services/truck-accessories" component={TruckAccessoriesService} />
+      <Route path="/services/batteries" component={BatteriesService} />
+      <Route path="/services/ac-heater" component={ACHeaterService} />
       <Route path="/tire-brands" component={TireBrandsPage} />
       <Route path="/blog" component={Blog} />
       <Route path="/careers" component={Careers} />

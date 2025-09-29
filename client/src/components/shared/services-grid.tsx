@@ -44,7 +44,7 @@ const services = [
     icon: Battery,
     title: "Battery & Electrical",
     description: "Battery replacement, alternator, starter, and electrical diagnostics.",
-    href: "/services/electrical"
+    href: "/services/batteries"
   },
   {
     icon: Thermometer,
