@@ -111,8 +111,8 @@ const faqData = [
         answer: "Service availability varies by location. Contact your nearest Delta Tire location to ask about shuttle service, loaner vehicles, or nearby amenities while you wait."
       },
       {
-        question: "Are you ASE certified?",
-        answer: "Yes! Our technicians are ASE (Automotive Service Excellence) certified and receive ongoing training to stay current with the latest automotive technology and repair techniques."
+        question: "Are your technicians trained and qualified?",
+        answer: "Absolutely! Our technicians are experienced professionals who receive ongoing training to stay current with the latest automotive technology and repair techniques. We hire the best technicians we can find and invest in their continued education."
       }
     ]
   }

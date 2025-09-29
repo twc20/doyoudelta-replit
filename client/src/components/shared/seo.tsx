@@ -91,7 +91,7 @@ export const localBusinessData = {
   "@context": "https://schema.org",
   "@type": "AutomotiveBusiness",
   "name": "Delta Tire",
-  "description": "Professional tire service, auto repair, and automotive care across the Four Corners region. ASE certified technicians serving New Mexico and Arizona.",
+  "description": "Professional tire service, auto repair, and automotive care across the Four Corners region. Expert technicians serving New Mexico and Arizona.",
   "url": "https://deltatire.com",
   "logo": "https://deltatire.com/delta-tire-logo.png",
   "image": "https://deltatire.com/og-image.jpg",

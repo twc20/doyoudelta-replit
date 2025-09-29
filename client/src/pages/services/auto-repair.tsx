@@ -16,7 +16,7 @@ export default function AutoRepairService() {
             General Auto Repair
           </h1>
           <p className="text-xl md:text-2xl text-red-100 max-w-3xl mx-auto mb-8">
-            Comprehensive automotive repair from ASE certified technicians. We treat your car like our car.
+            Comprehensive automotive repair from expert technicians. We treat your car like our car.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -53,7 +53,7 @@ export default function AutoRepairService() {
               Complete Auto Repair Services
             </h2>
             <p className="text-lg text-gray-600">
-              From routine maintenance to complex repairs, our ASE certified technicians have the expertise 
+              From routine maintenance to complex repairs, our expert technicians have the expertise 
               and equipment to service all makes and models.
             </p>
           </div>
@@ -213,7 +213,7 @@ export default function AutoRepairService() {
             Need Auto Repair? We Can Help
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            From routine maintenance to complex repairs, our ASE certified technicians provide expert service at all 4 locations.
+            From routine maintenance to complex repairs, our expert technicians provide quality service at all 4 locations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

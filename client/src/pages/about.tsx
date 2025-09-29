@@ -80,8 +80,8 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <Award className="w-12 h-12 text-red-600 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">ASE Certified</h3>
-              <p className="text-gray-600">Our technicians are ASE certified with ongoing training to stay current with automotive technology.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Expert Technicians</h3>
+              <p className="text-gray-600">Our skilled technicians receive ongoing training to stay current with the latest automotive technology.</p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <Users className="w-12 h-12 text-red-600 mb-4" />

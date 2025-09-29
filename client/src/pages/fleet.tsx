@@ -188,9 +188,9 @@ export default function Fleet() {
               <p className="text-gray-600">Across New Mexico and Arizona</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-red-600 mb-2">ASE</div>
-              <div className="text-gray-900 font-semibold mb-2">Certified Technicians</div>
-              <p className="text-gray-600">Expert service you can trust</p>
+              <div className="text-5xl font-bold text-red-600 mb-2">★★★★★</div>
+              <div className="text-gray-900 font-semibold mb-2">Customer Satisfaction</div>
+              <p className="text-gray-600">Top-rated service you can trust</p>
             </div>
           </div>
         </div>

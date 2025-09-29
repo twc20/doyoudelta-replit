@@ -16,7 +16,7 @@ export default function Services() {
             Complete Automotive Services
           </h1>
           <p className="text-xl md:text-2xl text-red-100 max-w-3xl mx-auto mb-8">
-            Professional tire service, auto repair, and maintenance from ASE certified technicians across New Mexico and Arizona.
+            Professional tire service, auto repair, and maintenance from expert technicians across New Mexico and Arizona.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 

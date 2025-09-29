@@ -20,6 +20,7 @@ import AutoRepairService from "@/pages/services/auto-repair";
 import TruckAccessoriesService from "@/pages/services/truck-accessories";
 import TireBrandsPage from "@/pages/tire-brands";
 import Blog from "@/pages/blog";
+import Careers from "@/pages/careers";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -35,6 +36,7 @@ function Router() {
       <Route path="/services/truck-accessories" component={TruckAccessoriesService} />
       <Route path="/tire-brands" component={TireBrandsPage} />
       <Route path="/blog" component={Blog} />
+      <Route path="/careers" component={Careers} />
       <Route path="/locations" component={Locations} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />

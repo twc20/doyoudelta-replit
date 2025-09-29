@@ -32,7 +32,7 @@ export default function Locations() {
             Visit Your Nearest Delta Tire
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Each location offers the same high-quality service, ASE certified technicians, and commitment to transparency. 
+            Each location offers the same high-quality service, expert technicians, and commitment to transparency. 
             Find the location nearest you and experience the Delta difference.
           </p>
         </div>

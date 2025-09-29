@@ -14,8 +14,8 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <SEO
         title="Delta Tire - Professional Tire Service & Auto Repair | NM & AZ"
-        description="Delta Tire provides professional tire service, auto repair, oil changes, brake repair, and wheel alignments across New Mexico and Arizona. ASE certified technicians serving Grants, Gallup, Farmington, and Eagar. Open today - call now!"
-        keywords="tire service, auto repair, oil change, brake repair, wheel alignment, truck accessories, ASE certified, New Mexico, Arizona, Grants, Gallup, Farmington, Eagar, Delta Tire"
+        description="Delta Tire provides professional tire service, auto repair, oil changes, brake repair, and wheel alignments across New Mexico and Arizona. Expert technicians serving Grants, Gallup, Farmington, and Eagar. Open today - call now!"
+        keywords="tire service, auto repair, oil change, brake repair, wheel alignment, truck accessories, New Mexico, Arizona, Grants, Gallup, Farmington, Eagar, Delta Tire"
         structuredData={localBusinessData}
       />
       <Header />
@@ -58,7 +58,7 @@ export default function Home() {
                 asChild
                 data-testid="button-careers"
               >
-                <a href="https://delta-careers-demo.lindy.site/careers-final-updated.html" target="_blank">
+                <a href="/careers">
                   Come Work With Us
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
@@ -182,30 +182,97 @@ export default function Home() {
               <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Award className="w-8 h-8 text-red-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">ASE Certified</h3>
-              <p className="text-gray-600">Our technicians are ASE certified with ongoing training to stay current with automotive technology.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Warranty Protection</h3>
+              <p className="text-gray-600">Comprehensive warranties on all our work. Your investment is protected with our quality guarantee.</p>
             </div>
             <div className="text-center">
               <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-red-600" />
+                <Car className="w-8 h-8 text-red-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Honest Service</h3>
-              <p className="text-gray-600">Transparent pricing and honest recommendations. We only suggest services your vehicle actually needs.</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <MapPin className="w-8 h-8 text-red-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Local Expertise</h3>
-              <p className="text-gray-600">Four Corners regional expertise with 4 convenient locations across New Mexico and Arizona.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Courtesy Cars Available</h3>
+              <p className="text-gray-600">Stay mobile while we service your vehicle. Free loaner cars available at select locations.</p>
             </div>
             <div className="text-center">
               <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Shield className="w-8 h-8 text-red-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Quality Guarantee</h3>
-              <p className="text-gray-600">We stand behind our work with comprehensive warranties and guarantee customer satisfaction.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Clean, Professional Shop</h3>
+              <p className="text-gray-600">Professional, comfortable waiting area. Clean facility you can trust with your vehicle.</p>
             </div>
+            <div className="text-center">
+              <div className="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <CheckCircle className="w-8 h-8 text-red-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Financing Available</h3>
+              <p className="text-gray-600">Flexible payment options available. Auto repair financing and payment plans to fit your budget.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Testimonials Section */}
+      <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              ★★★★★ What Our Customers Say
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              They experience the Delta Difference every day. Real reviews from satisfied customers across New Mexico & Arizona.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="bg-white">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-6 italic">
+                  "Now I know what 'Do You Delta' means! They really are the difference. Excellent tire service and they truly treat your car like our car!"
+                </p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold text-gray-900">Sarah M.</p>
+                  <p className="text-sm text-gray-600">Grants, NM</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-6 italic">
+                  "The Delta Difference is real! Professional auto repair, clean facility, and they stand behind their work. Highly recommend!"
+                </p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold text-gray-900">Mike R.</p>
+                  <p className="text-sm text-gray-600">Gallup, NM</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white">
+              <CardContent className="p-8">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-6 italic">
+                  "I definitely Delta now! Fast, reliable tire service and the courtesy car program is a lifesaver!"
+                </p>
+                <div className="border-t pt-4">
+                  <p className="font-semibold text-gray-900">Jennifer L.</p>
+                  <p className="text-sm text-gray-600">Farmington, NM</p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

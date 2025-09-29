@@ -63,7 +63,7 @@ export function ServicesGrid() {
             Complete Automotive Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From tire installation to complex engine repairs, our ASE certified technicians provide comprehensive automotive care across all service categories.
+            From tire installation to complex engine repairs, our expert technicians provide comprehensive automotive care across all service categories.
           </p>
         </div>
 
