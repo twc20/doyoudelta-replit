@@ -12,6 +12,12 @@ import Appointments from "@/pages/appointments";
 import FAQ from "@/pages/faq";
 import VIP from "@/pages/vip";
 import Fleet from "@/pages/fleet";
+import TiresService from "@/pages/services/tires";
+import OilChangeService from "@/pages/services/oil-change";
+import BrakesService from "@/pages/services/brakes";
+import AlignmentService from "@/pages/services/alignment";
+import AutoRepairService from "@/pages/services/auto-repair";
+import TruckAccessoriesService from "@/pages/services/truck-accessories";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -19,6 +25,12 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/services" component={Services} />
+      <Route path="/services/tires" component={TiresService} />
+      <Route path="/services/oil-change" component={OilChangeService} />
+      <Route path="/services/brakes" component={BrakesService} />
+      <Route path="/services/alignment" component={AlignmentService} />
+      <Route path="/services/auto-repair" component={AutoRepairService} />
+      <Route path="/services/truck-accessories" component={TruckAccessoriesService} />
       <Route path="/locations" component={Locations} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
