@@ -173,7 +173,7 @@ export default function Home() {
               Why Choose Delta Tire?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're not the cheapest—we add the most value. <strong>Trusted auto repair</strong>, <strong>professional tire service</strong>, and <strong>honest pricing</strong> since 1995.
+              We're not the cheapest—we add the most value. <strong>Trusted auto repair</strong>, <strong>professional tire service</strong>, and <strong>honest pricing</strong> since 2015.
             </p>
           </div>
 
@@ -254,7 +254,7 @@ export default function Home() {
               <div className="text-gray-600">Convenient Locations</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-red-600 mb-2" data-testid="stat-experience">30+</div>
+              <div className="text-3xl font-bold text-red-600 mb-2" data-testid="stat-experience">10</div>
               <div className="text-gray-600">Years of Experience</div>
             </div>
             <div>

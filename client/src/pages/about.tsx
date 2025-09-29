@@ -28,7 +28,7 @@ export default function About() {
               Our Story
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              Since 1995, Delta Tire has been serving the Four Corners region with professional automotive services. 
+              Since 2015, Delta Tire has been serving the Four Corners region with professional automotive services. 
               Our name represents the mathematical symbol for change and difference—because we believe in making a positive 
               difference in every customer interaction.
             </p>

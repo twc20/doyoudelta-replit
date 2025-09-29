@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Delta Tire</h3>
             <p className="text-gray-300 mb-4">
-              "Do You Delta?" - Professional automotive services across New Mexico and Arizona since 1995.
+              "Do You Delta?" - Professional automotive services across New Mexico and Arizona since 2015.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors" data-testid="link-facebook">

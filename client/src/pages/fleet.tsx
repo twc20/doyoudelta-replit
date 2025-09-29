@@ -178,9 +178,9 @@ export default function Fleet() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-red-600 mb-2">30+</div>
+              <div className="text-5xl font-bold text-red-600 mb-2">10</div>
               <div className="text-gray-900 font-semibold mb-2">Years of Experience</div>
-              <p className="text-gray-600">Trusted by local businesses since 1995</p>
+              <p className="text-gray-600">Trusted by local businesses since 2015</p>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-red-600 mb-2">4</div>
