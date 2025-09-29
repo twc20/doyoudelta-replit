@@ -20,7 +20,10 @@ const brands = [
   { name: "Nexen", logo: "/logos/tires/nexen.png" },
   { name: "Nitto", logo: "/logos/tires/nitto.png" },
   { name: "Pirelli", logo: "/logos/tires/pirelli.png" },
-  { name: "Samson", logo: "/logos/tires/samson.png" }
+  { name: "Samson", logo: "/logos/tires/samson.png" },
+  { name: "Toyo", logo: "/logos/tires/toyo.png" },
+  { name: "Uniroyal", logo: "/logos/tires/uniroyal.png" },
+  { name: "Yokohama", logo: "/logos/tires/yokohama.png" }
 ];
 
 export function TireBrands() {
