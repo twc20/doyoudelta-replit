@@ -1,7 +1,7 @@
 import { useState } from 'react';
+import { Link } from 'wouter';
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Menu, X } from "lucide-react";
-import Link from 'next/link';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

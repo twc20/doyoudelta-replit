@@ -70,7 +70,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         path: filePath
       });
       
-      if (!Array.isArray(fileContent.data) && fileContent.data.content) {
+      if (!Array.isArray(fileContent.data) && 'content' in fileContent.data && fileContent.data.content) {
         const content = Buffer.from(fileContent.data.content, 'base64').toString('utf-8');
         res.json({
           path: fileContent.data.path,

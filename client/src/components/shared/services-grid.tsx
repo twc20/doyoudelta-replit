@@ -1,7 +1,7 @@
+import { Link } from 'wouter';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Car, Wrench, Droplet, Disc, Ruler, Truck, Battery, Thermometer, ArrowRight } from "lucide-react";
-import Link from 'next/link';
 
 const services = [
   {
