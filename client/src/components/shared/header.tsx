@@ -20,7 +20,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             <Link href="/" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               Home
             </Link>
@@ -37,10 +37,13 @@ export function Header() {
               FAQ
             </Link>
             <Link href="/fleet" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
-              Fleet Services
+              Fleet
             </Link>
-            <Link href="/vip" className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 font-medium transition-colors">
-              VIP Program
+            <Link href="/appointments" className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 font-medium transition-colors" data-testid="link-appointments">
+              Book Appointment
+            </Link>
+            <Link href="/vip" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 font-medium transition-colors">
+              VIP
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               Contact
@@ -105,8 +108,16 @@ export function Header() {
                 Fleet Services
               </Link>
               <Link
-                href="/vip"
+                href="/appointments"
                 className="bg-red-600 text-white px-4 py-3 rounded-lg hover:bg-red-700 font-medium transition-colors text-center"
+                onClick={() => setIsMenuOpen(false)}
+                data-testid="link-appointments-mobile"
+              >
+                Book Appointment
+              </Link>
+              <Link
+                href="/vip"
+                className="bg-gray-800 text-white px-4 py-3 rounded-lg hover:bg-gray-900 font-medium transition-colors text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 VIP Program

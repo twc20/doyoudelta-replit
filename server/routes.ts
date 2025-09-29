@@ -193,41 +193,49 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Service appointment booking
   app.post("/api/appointment", async (req, res) => {
     try {
-      const { 
-        customerName, 
-        email, 
-        phone, 
-        vehicleInfo, 
-        serviceType, 
-        preferredDate, 
-        preferredTime, 
-        location, 
-        notes 
-      } = req.body;
+      const { appointmentFormSchema } = await import("@shared/schema");
+      const validation = appointmentFormSchema.safeParse(req.body);
       
-      if (!customerName || !email || !phone || !serviceType || !preferredDate) {
+      if (!validation.success) {
         return res.status(400).json({ 
-          message: "Customer name, email, phone, service type, and preferred date are required" 
+          message: "Validation failed",
+          errors: validation.error.errors 
         });
       }
       
-      // TODO: Implement appointment booking system
+      const { 
+        name, 
+        email, 
+        phone, 
+        location, 
+        service, 
+        date, 
+        time, 
+        vehicleMake,
+        vehicleModel,
+        vehicleYear,
+        notes 
+      } = validation.data;
+      
+      // TODO: Implement appointment booking system (calendar integration, email confirmations)
       console.log("Appointment booking:", {
-        customerName,
+        name,
         email,
         phone,
-        vehicleInfo,
-        serviceType,
-        preferredDate,
-        preferredTime,
         location,
+        service,
+        date,
+        time,
+        vehicle: { make: vehicleMake, model: vehicleModel, year: vehicleYear },
         notes,
         timestamp: new Date().toISOString()
       });
       
+      const confirmationNumber = `DT-${Date.now()}`;
+      
       res.json({ 
-        message: "Appointment request submitted successfully",
-        confirmationNumber: `DT-${Date.now()}`
+        message: "Appointment request submitted successfully! We'll contact you shortly to confirm your appointment.",
+        confirmationNumber
       });
     } catch (error) {
       console.error("Error processing appointment booking:", error);
