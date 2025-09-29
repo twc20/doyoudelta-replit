@@ -4,6 +4,50 @@
 
 Delta Tire is a multi-location automotive service business operating across New Mexico and Arizona. The application serves as a comprehensive web presence featuring service information, location details, and customer engagement tools. The platform provides information about tire services, auto repair, maintenance, and specialized programs including VIP school fundraising and fleet services. With four physical locations (Grants, Gallup, Farmington NM, and Eagar AZ), the application emphasizes local SEO, customer communication, and service transparency.
 
+**Company History**: Founded in 2015, Delta Tire has 10 years of experience serving the Four Corners region with professional automotive services.
+
+## Recent Changes (September 2025)
+
+**Company Branding Update**
+- Updated all references from 1995 founding date to correct 2015 founding date
+- Changed "30+ years" to "10 years" of experience across entire website
+
+**Individual Service Pages**
+- Created 6 dedicated service pages with comprehensive information:
+  - `/services/tires` - Tire sales, installation, and repair
+  - `/services/oil-change` - Oil change and fluid services
+  - `/services/brakes` - Brake repair and replacement
+  - `/services/alignment` - Wheel alignment and suspension
+  - `/services/auto-repair` - General automotive repair
+  - `/services/truck-accessories` - Truck upgrades and accessories
+- Each page includes service details, benefits, process overview, and CTAs
+
+**Tire Brands Showcase**
+- Created comprehensive tire brands data file (`shared/tire-brands.ts`) with 18 major brands
+- Each brand includes: name, description, specialties, tire types, price range, warranty info
+- Built dedicated tire brands page (`/tire-brands`) showcasing all brands
+- Organized by price range: Premium/Ultra, Mid-Range, Budget
+- Includes popular brands section and tire selection guidance
+
+**Blog & Content Hub**
+- Created blog articles data file (`shared/blog-articles.ts`) with 12 automotive articles
+- Built full-featured blog page (`/blog`) with:
+  - Featured articles section
+  - Category filtering (Tire Maintenance, Safety, Maintenance Tips, etc.)
+  - Search functionality (by title, excerpt, tags)
+  - Newsletter signup
+- All articles include metadata: author, date, category, tags, excerpts
+
+**SMS-Based Appointment Booking**
+- Completely redesigned appointments page from form-based to SMS-based booking
+- Features:
+  - Location dropdown (4 locations with phone numbers)
+  - Service dropdown (11 service options)
+  - One-click SMS messaging to selected location
+  - Pre-programmed message: "Hey, I was on your website and want to schedule an appointment for [service] at your [location] location."
+  - Mobile-first design with "How It Works" guide
+  - Fallback phone numbers for direct calling
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
@@ -33,10 +77,15 @@ Preferred communication style: Simple, everyday language.
 
 **Directory Structure**
 - `/client/src/pages/*` - Route-based page components
+  - `/client/src/pages/services/*` - Individual service pages (tires, oil-change, brakes, etc.)
 - `/client/src/components/shared/*` - Reusable business components (Header, Footer, SEO, etc.)
 - `/client/src/components/ui/*` - shadcn/ui component library
 - `/client/src/lib/*` - Utility functions and shared logic
 - `/client/src/hooks/*` - Custom React hooks
+- `/shared/*` - Shared data files and schemas
+  - `/shared/tire-brands.ts` - Comprehensive tire brands database
+  - `/shared/blog-articles.ts` - Blog articles content and metadata
+  - `/shared/schema.ts` - Type definitions and validation schemas
 
 ### Backend Architecture
 
@@ -120,19 +169,45 @@ Preferred communication style: Simple, everyday language.
 ### Content & Data Structure
 
 **Location Data**
-- Four physical locations with distinct addresses, phone numbers, and hours
+- Four physical locations with distinct addresses, phone numbers, and hours:
+  - Grants, NM: (505) 287-7946
+  - Gallup, NM: (505) 722-2945
+  - Farmington, NM: (505) 325-4500
+  - Eagar, AZ: (928) 333-3730
 - Google Maps integration via direct URL links
 - Structured for local SEO optimization
+- Each location configured for SMS appointment booking
 
-**Service Categories**
-- Tire & Wheel Sales/Service
-- Auto Repair
-- Oil Change & Maintenance
-- Brake Repair
-- Wheel Alignment & Suspension
-- Truck Accessories
-- Battery & Electrical
-- Heating & A/C
+**Service Categories (with dedicated pages)**
+- Tire & Wheel Sales/Service (`/services/tires`)
+- Oil Change & Maintenance (`/services/oil-change`)
+- Brake Repair (`/services/brakes`)
+- Wheel Alignment & Suspension (`/services/alignment`)
+- Auto Repair (`/services/auto-repair`)
+- Truck Accessories (`/services/truck-accessories`)
+- Battery & Electrical (planned)
+- Heating & A/C (planned)
+
+**Tire Brands Database**
+- 18 major tire brands with complete specifications
+- Organized by price range: Premium/Ultra-Premium, Mid-Range, Budget
+- Each brand includes: description, specialties, tire types, price range, warranty
+- Popular brands flagged for homepage/featured displays
+- Helper functions: `getBrandByName()`, `brandsByPriceRange`, `popularBrands`
+
+**Blog & Content**
+- 12 automotive articles covering maintenance, safety, and buying guides
+- Categories: Tire Maintenance, Safety, Maintenance Tips, Tire Guide, Truck Accessories, Fleet Services
+- Each article includes: title, slug, excerpt, author, date, category, tags, featured flag
+- Featured articles highlighted on blog page
+- Search and filter functionality for content discovery
+
+**Appointment Booking**
+- SMS-based booking system (no backend required)
+- User selects location and service via dropdowns
+- Opens phone's messaging app with pre-programmed message
+- Direct SMS to location-specific phone numbers
+- Fallback to direct phone calling for non-mobile devices
 
 **Special Programs**
 - VIP School Fundraising Program
