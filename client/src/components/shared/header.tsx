@@ -15,9 +15,11 @@ export function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="h-10 w-32 bg-red-600 text-white flex items-center justify-center font-bold text-lg rounded">
-              DELTA TIRE
-            </div>
+            <img 
+              src="/images/delta-tire-logo.png" 
+              alt="Delta Tire - Complete Automotive Service" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
