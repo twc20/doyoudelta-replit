@@ -1,5 +1,15 @@
 import { useEffect } from 'react';
 
+interface ArticleSchema {
+  headline: string;
+  datePublished: string;
+  dateModified?: string;
+  author: string;
+  description: string;
+  image?: string;
+  url?: string;
+}
+
 interface SEOProps {
   title: string;
   description: string;
@@ -8,6 +18,7 @@ interface SEOProps {
   ogType?: string;
   ogImage?: string;
   structuredData?: object;
+  articleSchema?: ArticleSchema;
   geoRegion?: string;
   geoPlacename?: string;
   geoPosition?: string;
@@ -19,8 +30,9 @@ export function SEO({
   keywords,
   canonical,
   ogType = "website",
-  ogImage = "/images/delta-tire-logo.png",
+  ogImage = "https://deltatire.com/images/delta-tire-logo.png",
   structuredData,
+  articleSchema,
   geoRegion,
   geoPlacename,
   geoPosition
@@ -89,17 +101,56 @@ export function SEO({
       linkElement.setAttribute('href', canonical);
     }
 
-    // Structured data
+    // Structured data (LocalBusiness or Organization)
     if (structuredData) {
-      let scriptElement = document.querySelector('script[type="application/ld+json"]');
+      let scriptElement = document.querySelector('script[type="application/ld+json"][data-type="business"]');
       if (!scriptElement) {
         scriptElement = document.createElement('script');
         scriptElement.setAttribute('type', 'application/ld+json');
+        scriptElement.setAttribute('data-type', 'business');
         document.head.appendChild(scriptElement);
       }
       scriptElement.textContent = JSON.stringify(structuredData);
     }
-  }, [title, description, keywords, canonical, ogType, ogImage, structuredData, geoRegion, geoPlacename, geoPosition]);
+
+    // Article structured data
+    if (articleSchema) {
+      const articleData = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": articleSchema.headline,
+        "description": articleSchema.description,
+        "datePublished": articleSchema.datePublished,
+        "dateModified": articleSchema.dateModified || articleSchema.datePublished,
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": articleSchema.url || canonical
+        },
+        "image": articleSchema.image || ogImage,
+        "author": {
+          "@type": "Person",
+          "name": articleSchema.author
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Delta Tire",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://deltatire.com/images/delta-tire-logo.png"
+          }
+        }
+      };
+
+      let articleScriptElement = document.querySelector('script[type="application/ld+json"][data-type="article"]');
+      if (!articleScriptElement) {
+        articleScriptElement = document.createElement('script');
+        articleScriptElement.setAttribute('type', 'application/ld+json');
+        articleScriptElement.setAttribute('data-type', 'article');
+        document.head.appendChild(articleScriptElement);
+      }
+      articleScriptElement.textContent = JSON.stringify(articleData);
+    }
+  }, [title, description, keywords, canonical, ogType, ogImage, structuredData, articleSchema, geoRegion, geoPlacename, geoPosition]);
 
   return null;
 }

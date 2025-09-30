@@ -40,6 +40,19 @@ export default function BlogArticle() {
       <SEO 
         title={`${article.title} | Delta Tire Blog`}
         description={article.excerpt}
+        keywords={article.tags.join(", ")}
+        canonical={`https://deltatire.com/blog/${article.slug}`}
+        ogType="article"
+        ogImage="https://deltatire.com/images/delta-tire-logo.png"
+        articleSchema={{
+          headline: article.title,
+          datePublished: new Date(article.publishedDate).toISOString(),
+          dateModified: new Date(article.publishedDate).toISOString(),
+          author: article.author,
+          description: article.excerpt,
+          image: "https://deltatire.com/images/delta-tire-logo.png",
+          url: `https://deltatire.com/blog/${article.slug}`
+        }}
       />
       <Header />
       

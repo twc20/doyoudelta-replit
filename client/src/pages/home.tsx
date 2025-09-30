@@ -17,7 +17,7 @@ export default function Home() {
         title="Delta Tire | Auto Repair Grants Gallup Farmington NM AZ"
         description="Expert tire & auto repair in Grants, Gallup, Farmington NM & Eagar AZ. Oil changes, brakes, alignments, truck accessories. 10 years serving Four Corners. Call now!"
         keywords="tire service, auto repair, oil change, brake repair, wheel alignment, truck accessories, New Mexico, Arizona, Grants, Gallup, Farmington, Eagar"
-        canonical="https://deltatire.com/"
+        canonical="https://deltatire.com"
         geoRegion="US-NM"
         geoPlacename="Grants, New Mexico"
         geoPosition="35.1478;-107.8528"
