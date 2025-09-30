@@ -4,10 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Calendar, CheckCircle, Wrench, Shield, Award } from "lucide-react";
 import { CallButton } from "@/components/shared/location-selector-dialog";
+import { SEO } from "@/components/shared/seo";
 
 export default function AutoRepairService() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Auto Repair Grants Gallup Farmington NM | Delta Tire"
+        description="Complete auto repair: engine, transmission, electrical, AC, heating & more. Expert mechanics in Grants, Gallup, Farmington NM & Eagar AZ. Digital inspection included!"
+        keywords="auto repair, car repair, mechanic, engine repair, transmission, electrical, Grants, Gallup, Farmington"
+        canonical="https://deltatire.com/services/auto-repair"
+      />
       <Header />
       
       {/* Hero Section */}

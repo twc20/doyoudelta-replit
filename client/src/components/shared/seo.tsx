@@ -8,6 +8,9 @@ interface SEOProps {
   ogType?: string;
   ogImage?: string;
   structuredData?: object;
+  geoRegion?: string;
+  geoPlacename?: string;
+  geoPosition?: string;
 }
 
 export function SEO({
@@ -16,8 +19,11 @@ export function SEO({
   keywords,
   canonical,
   ogType = "website",
-  ogImage = "https://deltatire.com/og-image.jpg",
-  structuredData
+  ogImage = "/images/delta-tire-logo.png",
+  structuredData,
+  geoRegion,
+  geoPlacename,
+  geoPosition
 }: SEOProps) {
   useEffect(() => {
     // Set page title
@@ -41,6 +47,18 @@ export function SEO({
     setMetaTag('description', description);
     if (keywords) {
       setMetaTag('keywords', keywords);
+    }
+
+    // Geo meta tags for local SEO
+    if (geoRegion) {
+      setMetaTag('geo.region', geoRegion);
+    }
+    if (geoPlacename) {
+      setMetaTag('geo.placename', geoPlacename);
+    }
+    if (geoPosition) {
+      setMetaTag('geo.position', geoPosition);
+      setMetaTag('ICBM', geoPosition);
     }
 
     // Open Graph tags
@@ -81,15 +99,184 @@ export function SEO({
       }
       scriptElement.textContent = JSON.stringify(structuredData);
     }
-  }, [title, description, keywords, canonical, ogType, ogImage, structuredData]);
+  }, [title, description, keywords, canonical, ogType, ogImage, structuredData, geoRegion, geoPlacename, geoPosition]);
 
   return null;
 }
 
-// Local Business Structured Data
+// Individual location structured data for each shop
+export const grantsLocationData = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Delta Tire - Grants",
+  "description": "Professional tire service and auto repair in Grants, New Mexico. Expert technicians providing tire sales, oil changes, brake repair, and complete automotive service.",
+  "url": "https://deltatire.com",
+  "logo": "https://deltatire.com/images/delta-tire-logo.png",
+  "image": "https://deltatire.com/images/delta-tire-logo.png",
+  "telephone": "+1-505-287-7946",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "833 E Sante Fe Ave",
+    "addressLocality": "Grants",
+    "addressRegion": "NM",
+    "postalCode": "87020",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 35.1478,
+    "longitude": -107.8528
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "17:00"
+    }
+  ],
+  "paymentAccepted": "Cash, Credit Card, Debit Card, Financing",
+  "areaServed": {
+    "@type": "City",
+    "name": "Grants",
+    "containedInPlace": {
+      "@type": "State",
+      "name": "New Mexico"
+    }
+  }
+};
+
+export const gallupLocationData = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Delta Tire - Gallup",
+  "description": "Professional tire service and auto repair in Gallup, New Mexico. Expert technicians providing tire sales, oil changes, brake repair, and complete automotive service.",
+  "url": "https://deltatire.com",
+  "logo": "https://deltatire.com/images/delta-tire-logo.png",
+  "image": "https://deltatire.com/images/delta-tire-logo.png",
+  "telephone": "+1-505-722-2945",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "501 US-491",
+    "addressLocality": "Gallup",
+    "addressRegion": "NM",
+    "postalCode": "87301",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 35.5281,
+    "longitude": -108.7426
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "paymentAccepted": "Cash, Credit Card, Debit Card, Financing",
+  "areaServed": {
+    "@type": "City",
+    "name": "Gallup",
+    "containedInPlace": {
+      "@type": "State",
+      "name": "New Mexico"
+    }
+  }
+};
+
+export const farmingtonLocationData = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Delta Tire - Farmington",
+  "description": "Professional tire service and auto repair in Farmington, New Mexico. Expert technicians providing tire sales, oil changes, brake repair, and complete automotive service.",
+  "url": "https://deltatire.com",
+  "logo": "https://deltatire.com/images/delta-tire-logo.png",
+  "image": "https://deltatire.com/images/delta-tire-logo.png",
+  "telephone": "+1-505-325-4500",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4650 E Main St",
+    "addressLocality": "Farmington",
+    "addressRegion": "NM",
+    "postalCode": "87402",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.7281,
+    "longitude": -108.1687
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "paymentAccepted": "Cash, Credit Card, Debit Card, Financing",
+  "areaServed": {
+    "@type": "City",
+    "name": "Farmington",
+    "containedInPlace": {
+      "@type": "State",
+      "name": "New Mexico"
+    }
+  }
+};
+
+export const eagarLocationData = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Delta Tire - Eagar",
+  "description": "Professional tire service and auto repair in Eagar, Arizona. Expert technicians providing tire sales, oil changes, brake repair, and complete automotive service.",
+  "url": "https://deltatire.com",
+  "logo": "https://deltatire.com/images/delta-tire-logo.png",
+  "image": "https://deltatire.com/images/delta-tire-logo.png",
+  "telephone": "+1-928-333-3730",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "50 W Central Ave",
+    "addressLocality": "Eagar",
+    "addressRegion": "AZ",
+    "postalCode": "85925",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.1117,
+    "longitude": -109.2951
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "paymentAccepted": "Cash, Credit Card, Debit Card, Financing",
+  "areaServed": {
+    "@type": "City",
+    "name": "Eagar",
+    "containedInPlace": {
+      "@type": "State",
+      "name": "Arizona"
+    }
+  }
+};
+
+// Organization-level structured data
 export const localBusinessData = {
   "@context": "https://schema.org",
-  "@type": "AutomotiveBusiness",
+  "@type": "Organization",
   "name": "Delta Tire",
   "description": "Professional tire service, auto repair, and automotive care across the Four Corners region. Expert technicians serving New Mexico and Arizona.",
   "url": "https://deltatire.com",

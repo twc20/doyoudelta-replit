@@ -4,10 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Calendar, Truck, Shield, Wrench, Star } from "lucide-react";
 import { CallButton } from "@/components/shared/location-selector-dialog";
+import { SEO } from "@/components/shared/seo";
 
 export default function TruckAccessoriesService() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Truck Accessories Grants Gallup Farmington NM | Delta Tire"
+        description="Professional truck accessories: bed liners, tonneau covers, lift kits, running boards & more. Customize your truck in Grants, Gallup, Farmington NM & Eagar AZ!"
+        keywords="truck accessories, bed liner, tonneau cover, lift kit, running boards, truck upgrades, Grants, Gallup"
+        canonical="https://deltatire.com/services/truck-accessories"
+      />
       <Header />
       
       {/* Hero Section */}

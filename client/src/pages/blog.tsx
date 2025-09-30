@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Calendar, Search, Tag, ArrowRight } from "lucide-react";
 import { blogArticles, featuredArticles, categories } from "@shared/blog-articles";
+import { SEO } from "@/components/shared/seo";
 
 export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -26,6 +27,12 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Delta Tire Blog | Auto Repair Tips Tire Guides NM & AZ"
+        description="Expert automotive advice: tire maintenance, oil change tips, brake safety, winter driving & more. Professional insights from Delta Tire serving NM & AZ."
+        keywords="automotive blog, tire tips, maintenance advice, auto repair guides, tire safety, Delta Tire"
+        canonical="https://deltatire.com/blog"
+      />
       <Header />
       
       {/* Hero Section */}

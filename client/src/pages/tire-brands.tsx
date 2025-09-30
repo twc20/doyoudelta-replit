@@ -5,10 +5,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Phone, Calendar, Star, Shield, Award, CheckCircle } from "lucide-react";
 import { tireBrands, popularBrands, brandsByPriceRange } from "@shared/tire-brands";
+import { SEO } from "@/components/shared/seo";
 
 export default function TireBrandsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Tire Brands Michelin Goodyear BFGoodrich | Delta Tire NM"
+        description="Top tire brands: Michelin, Goodyear, BFGoodrich, Bridgestone, Cooper & more. Premium to budget options in Grants, Gallup, Farmington NM & Eagar AZ. Get a quote!"
+        keywords="tire brands, Michelin, Goodyear, BFGoodrich, Bridgestone, Cooper, tire selection, Grants, Gallup"
+        canonical="https://deltatire.com/tire-brands"
+      />
       <Header />
       
       {/* Hero Section */}

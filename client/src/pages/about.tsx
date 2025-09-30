@@ -2,10 +2,17 @@ import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { Button } from "@/components/ui/button";
 import { Award, Users, Clock, Star, Shield, Wrench } from "lucide-react";
+import { SEO } from "@/components/shared/seo";
 
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="About Delta Tire | 10 Years Serving Four Corners NM & AZ"
+        description="Delta Tire: 10 years of trusted auto repair in NM & AZ. We treat your car like our car. Transparent service, expert technicians, 4 locations. Do You Delta?"
+        keywords="about Delta Tire, automotive service, Four Corners, New Mexico, Arizona, car repair, trusted mechanic"
+        canonical="https://deltatire.com/about"
+      />
       <Header />
       
       {/* Hero Section */}

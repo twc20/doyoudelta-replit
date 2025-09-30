@@ -3,10 +3,17 @@ import { Footer } from "@/components/shared/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Truck, ClipboardCheck, Users, DollarSign, Calendar, FileText, CheckCircle } from "lucide-react";
+import { SEO } from "@/components/shared/seo";
 
 export default function Fleet() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Fleet Services for Business Grants Gallup Farmington NM"
+        description="Commercial fleet maintenance: scheduled service, preventive care, bulk discounts. Keep your business vehicles running in Grants, Gallup, Farmington NM & Eagar AZ."
+        keywords="fleet services, commercial vehicles, business fleet, preventive maintenance, bulk discount, Grants, Gallup"
+        canonical="https://deltatire.com/fleet"
+      />
       <Header />
       
       {/* Hero Section */}

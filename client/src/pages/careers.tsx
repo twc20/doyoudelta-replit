@@ -9,9 +9,10 @@ export default function Careers() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <SEO
-        title="Careers - Join the Delta Tire Team | NM & AZ"
-        description="Join the Delta Tire team! We're looking for skilled automotive technicians and service professionals across our New Mexico and Arizona locations. Competitive pay, great benefits, and a positive work environment."
-        keywords="automotive careers, technician jobs, auto repair jobs, tire technician, New Mexico jobs, Arizona jobs, Delta Tire careers"
+        title="Careers Join Delta Tire Team Grants Gallup Farmington NM"
+        description="Join Delta Tire! Hiring automotive technicians & service pros in Grants, Gallup, Farmington NM & Eagar AZ. Competitive pay, benefits, positive environment. Apply now!"
+        keywords="automotive careers, technician jobs, auto repair jobs, tire technician, New Mexico jobs, Arizona jobs"
+        canonical="https://deltatire.com/careers"
       />
       <Header />
       

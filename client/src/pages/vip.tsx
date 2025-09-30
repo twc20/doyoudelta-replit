@@ -3,10 +3,17 @@ import { Footer } from "@/components/shared/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Trophy, Users, DollarSign, Heart, CheckCircle } from "lucide-react";
+import { SEO } from "@/components/shared/seo";
 
 export default function VIP() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="VIP School Fundraising Program Grants Gallup Farmington NM"
+        description="Support your school with Delta Tire's VIP fundraising program! Get quality auto service & help local schools raise funds in Grants, Gallup, Farmington NM & Eagar AZ."
+        keywords="school fundraising, VIP program, community support, fundraising program, Grants, Gallup, Farmington"
+        canonical="https://deltatire.com/vip"
+      />
       <Header />
       
       {/* Hero Section */}

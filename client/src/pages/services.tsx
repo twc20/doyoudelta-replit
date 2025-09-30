@@ -3,10 +3,17 @@ import { Footer } from "@/components/shared/footer";
 import { ServicesGrid } from "@/components/shared/services-grid";
 import { Button } from "@/components/ui/button";
 import { Phone, Calendar } from "lucide-react";
+import { SEO } from "@/components/shared/seo";
 
 export default function Services() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Auto Services Grants Gallup Farmington NM | Delta Tire"
+        description="Complete automotive services: tire sales, oil changes, brake repair, wheel alignments, batteries, AC repair. Expert service in Grants, Gallup, Farmington NM & Eagar AZ."
+        keywords="auto repair, tire service, oil change, brake repair, alignment, battery, AC repair, Grants, Gallup, Farmington, Eagar"
+        canonical="https://deltatire.com/services"
+      />
       <Header />
       
       {/* Hero Section */}

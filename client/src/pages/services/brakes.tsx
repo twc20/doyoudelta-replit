@@ -4,10 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Calendar, CheckCircle, Shield, AlertTriangle, Wrench } from "lucide-react";
 import { CallButton } from "@/components/shared/location-selector-dialog";
+import { SEO } from "@/components/shared/seo";
 
 export default function BrakesService() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Brake Repair Grants Gallup Farmington NM | Delta Tire"
+        description="Expert brake service: pads, rotors, calipers & fluid. Squealing brakes? Soft pedal? We fix it fast in Grants, Gallup, Farmington NM & Eagar AZ. Free inspection!"
+        keywords="brake repair, brake pads, brake rotors, brake service, brake inspection, Grants, Gallup, Farmington"
+        canonical="https://deltatire.com/services/brakes"
+      />
       <Header />
       
       {/* Hero Section */}

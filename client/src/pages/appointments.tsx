@@ -63,9 +63,10 @@ export default function Appointments() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       <SEO
-        title="Book Appointment - Delta Tire | Schedule Auto Service"
-        description="Schedule your appointment at Delta Tire. Choose your location and service, then text us directly. Quick and easy booking across our 4 locations in NM & AZ."
-        keywords="appointment booking, schedule service, tire appointment, auto repair booking, Delta Tire, New Mexico, Arizona"
+        title="Book Appointment Grants Gallup Farmington NM | Delta Tire"
+        description="Schedule auto service at Delta Tire. Text us to book! Choose location & service. Quick appointment booking in Grants, Gallup, Farmington NM & Eagar AZ."
+        keywords="appointment booking, schedule service, tire appointment, auto repair booking, Delta Tire"
+        canonical="https://deltatire.com/appointments"
       />
       <Header />
       

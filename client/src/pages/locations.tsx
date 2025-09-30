@@ -2,10 +2,23 @@ import { Header } from "@/components/shared/header";
 import { Footer } from "@/components/shared/footer";
 import { LocationsGrid } from "@/components/shared/locations-grid";
 import { MapPin } from "lucide-react";
+import { SEO, grantsLocationData, gallupLocationData, farmingtonLocationData, eagarLocationData } from "@/components/shared/seo";
 
 export default function Locations() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="4 Locations NM & AZ | Delta Tire Grants Gallup Farmington"
+        description="Find Delta Tire near you: Grants, Gallup, Farmington NM & Eagar AZ. Professional auto repair & tire service across Four Corners. Hours, directions & phone numbers."
+        keywords="Delta Tire locations, Grants auto repair, Gallup tire shop, Farmington car service, Eagar mechanic, New Mexico, Arizona"
+        canonical="https://deltatire.com/locations"
+        geoRegion="US-NM"
+        geoPlacename="Four Corners Region"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@graph": [grantsLocationData, gallupLocationData, farmingtonLocationData, eagarLocationData]
+        }}
+      />
       <Header />
       
       {/* Hero Section */}

@@ -4,10 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Calendar, CheckCircle, Droplet, Shield, Clock } from "lucide-react";
 import { CallButton } from "@/components/shared/location-selector-dialog";
+import { SEO } from "@/components/shared/seo";
 
 export default function OilChangeService() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Oil Change Service Grants Gallup Farmington NM | Delta Tire"
+        description="Fast, professional oil changes with synthetic & conventional options. Digital inspection included. Serving Grants, Gallup, Farmington NM & Eagar AZ. Book today!"
+        keywords="oil change, synthetic oil, oil filter, fluid check, engine maintenance, Grants, Gallup, Farmington"
+        canonical="https://deltatire.com/services/oil-change"
+      />
       <Header />
       
       {/* Hero Section */}

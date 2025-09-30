@@ -4,10 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Calendar, CheckCircle, Gauge, AlertTriangle, Car } from "lucide-react";
 import { CallButton } from "@/components/shared/location-selector-dialog";
+import { SEO } from "@/components/shared/seo";
 
 export default function AlignmentService() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Wheel Alignment Grants Gallup Farmington NM | Delta Tire"
+        description="Precision wheel alignment extends tire life & improves handling. Car pulling? Uneven wear? We fix it in Grants, Gallup, Farmington NM & Eagar AZ. Book today!"
+        keywords="wheel alignment, tire alignment, suspension, alignment service, Grants, Gallup, Farmington"
+        canonical="https://deltatire.com/services/alignment"
+      />
       <Header />
       
       {/* Hero Section */}

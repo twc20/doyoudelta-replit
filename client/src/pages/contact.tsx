@@ -14,6 +14,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactFormSchema, type ContactFormData } from "@shared/schema";
 import { Link } from "wouter";
+import { SEO } from "@/components/shared/seo";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -55,6 +56,12 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Contact Delta Tire | Grants Gallup Farmington NM Eagar AZ"
+        description="Contact Delta Tire for auto repair & tire service. Call, text, or visit us in Grants, Gallup, Farmington NM or Eagar AZ. Get answers to your automotive questions."
+        keywords="contact Delta Tire, auto repair questions, tire service, phone numbers, hours, locations"
+        canonical="https://deltatire.com/contact"
+      />
       <Header />
       
       {/* Hero Section */}

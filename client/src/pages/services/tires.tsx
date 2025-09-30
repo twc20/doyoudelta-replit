@@ -5,10 +5,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Calendar, CheckCircle, Shield, Award, Wrench } from "lucide-react";
 import { TireBrands } from "@/components/shared/tire-brands";
 import { CallButton } from "@/components/shared/location-selector-dialog";
+import { SEO } from "@/components/shared/seo";
 
 export default function TiresService() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="Tire Sales & Service Grants Gallup Farmington | Delta Tire"
+        description="Premium tires from top brands. Expert installation, tire repair, rotation & balancing in Grants, Gallup, Farmington NM & Eagar AZ. Free tire inspection. Shop now!"
+        keywords="tire sales, tire installation, tire repair, tire rotation, tire brands, Grants, Gallup, Farmington, Eagar"
+        canonical="https://deltatire.com/services/tires"
+      />
       <Header />
       
       {/* Hero Section */}

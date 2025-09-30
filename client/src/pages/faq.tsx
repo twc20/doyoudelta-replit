@@ -4,6 +4,7 @@ import { Footer } from "@/components/shared/footer";
 import { Input } from "@/components/ui/input";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Search } from "lucide-react";
+import { SEO } from "@/components/shared/seo";
 
 const faqData = [
   {
@@ -131,6 +132,12 @@ export default function FAQ() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+      <SEO
+        title="FAQ Auto Repair Tire Service Questions | Delta Tire NM AZ"
+        description="Get answers to common auto repair & tire service questions. Tire replacement, oil changes, brake repair, warranties & more. Delta Tire serving NM & AZ."
+        keywords="auto repair FAQ, tire questions, oil change frequency, brake service, warranty, Delta Tire"
+        canonical="https://deltatire.com/faq"
+      />
       <Header />
       
       {/* Hero Section */}
