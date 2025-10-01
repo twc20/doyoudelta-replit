@@ -24,6 +24,7 @@ import TireBrandsPage from "@/pages/tire-brands";
 import Blog from "@/pages/blog";
 import BlogArticle from "@/pages/blog-article";
 import Careers from "@/pages/careers";
+import TireProsWarranty from "@/pages/tire-pros-warranty";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -43,6 +44,7 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogArticle} />
       <Route path="/careers" component={Careers} />
+      <Route path="/tire-pros-warranty" component={TireProsWarranty} />
       <Route path="/locations" component={Locations} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />

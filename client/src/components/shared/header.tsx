@@ -51,6 +51,9 @@ export function Header() {
             <Link href="/vip" className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 font-medium transition-colors">
               VIP
             </Link>
+            <Link href="/tire-pros-warranty" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 font-medium transition-colors">
+              Warranty
+            </Link>
             <Link href="/contact" className="text-gray-700 hover:text-red-600 font-medium transition-colors">
               Contact
             </Link>
@@ -134,6 +137,13 @@ export function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 VIP Program
+              </Link>
+              <Link
+                href="/tire-pros-warranty"
+                className="bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 font-medium transition-colors text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Warranty Protection
               </Link>
               <Link
                 href="/contact"
