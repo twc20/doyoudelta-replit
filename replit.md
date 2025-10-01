@@ -6,7 +6,23 @@ Delta Tire is a multi-location automotive service business operating across New 
 
 **Company History**: Founded in 2015, Delta Tire has 10 years of experience serving the Four Corners region with professional automotive services.
 
-## Recent Changes (September 2025)
+## Recent Changes (October 2025)
+
+**Tire Pros Branding & Warranty**
+- Added Tire Pros logo to website footer with "Proud Member of" designation
+- Created comprehensive Tire Pros Warranty page (`/tire-pros-warranty`)
+- Redesigned warranty page to match TirePros.com aesthetic:
+  - Clean white background with alternating sections
+  - Red checkmarks for bullet lists (#e31837 Tire Pros red)
+  - Simple, professional layout with generous white space
+  - Hero section with dark background
+  - 24/7 roadside assistance prominence (1-844-281-0747)
+- Warranty coverage includes:
+  - Nationwide Service Protection Plan (24 months/24,000 miles)
+  - Free 24/7 Roadside Assistance with every purchase
+  - Optional Tire Protection Plan (36 months)
+  - $350 Promise guarantee
+- Added "Warranty" button to main navigation (desktop and mobile)
 
 **Company Branding Update**
 - Updated all references from 1995 founding date to correct 2015 founding date

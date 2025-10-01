@@ -83,8 +83,18 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
-          <p>&copy; 2025 Delta Tire. All rights reserved. | <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link> | <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></p>
+        <div className="border-t border-gray-700 mt-12 pt-8">
+          <div className="flex flex-col items-center gap-6 mb-6">
+            <div className="text-center text-gray-300">
+              <p className="text-sm mb-2">Proud Member of</p>
+              <img 
+                src="/logos/tire-pros-logo.png" 
+                alt="Tire Pros - Professional Tire Dealer Network" 
+                className="h-12 w-auto mx-auto"
+              />
+            </div>
+          </div>
+          <p className="text-center text-gray-300">&copy; 2025 Delta Tire. All rights reserved. | <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link> | <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></p>
         </div>
       </div>
     </footer>
