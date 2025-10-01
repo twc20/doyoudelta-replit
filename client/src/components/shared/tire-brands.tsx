@@ -1,4 +1,5 @@
 const brands = [
+  { name: "Armstrong", logo: "/logos/tires/armstrong.png" },
   { name: "BFGoodrich", logo: "/logos/tires/bfgoodrich.png" },
   { name: "Bridgestone", logo: "/logos/tires/bridgestone.png" },
   { name: "Carlisle", logo: "/logos/tires/carlisle.png" },
