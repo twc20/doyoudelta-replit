@@ -72,7 +72,7 @@ export function Header() {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-gray-200 py-4">
+          <div className="lg:hidden border-t border-gray-200 py-4 max-h-[calc(100vh-80px)] overflow-y-auto">
             <nav className="flex flex-col space-y-4">
               <Link
                 href="/"
