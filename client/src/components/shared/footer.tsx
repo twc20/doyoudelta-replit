@@ -85,15 +85,12 @@ export function Footer() {
 
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col items-center gap-4 mb-6">
-            <div className="text-center">
-              <p className="text-sm text-gray-400 mb-3">Proud Member of</p>
-              <div className="bg-white px-8 py-4 rounded-lg inline-block">
-                <img 
-                  src="/logos/tire-pros-logo.png" 
-                  alt="Tire Pros - Professional Tire Dealer Network" 
-                  className="h-10 w-auto"
-                />
-              </div>
+            <div className="bg-white px-8 py-4 rounded-lg inline-block">
+              <img 
+                src="/logos/tire-pros-logo.png" 
+                alt="Tire Pros - Professional Tire Dealer Network" 
+                className="h-10 w-auto"
+              />
             </div>
           </div>
           <p className="text-center text-gray-300">&copy; 2025 Delta Tire. All rights reserved. | <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link> | <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></p>
