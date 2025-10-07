@@ -1,0 +1,42 @@
+  
+		Domain	Certificate Status
+		autodiscover.doyoudelta.com	
+An error occurred the last time AutoSSL ran, on October 7, 2025:
+DNS DCV: No local authority: “autodiscover.doyoudelta.com”; HTTP DCV: The system queried for a temporary file at “http://autodiscover.doyoudelta.com/.well-known/acme-challenge/ENQFDD-HHXVYRWKOONQHFAMD6S-YM5_P”, but the web server responded with the following error: 400 (Bad Request). A DNS (Domain Name System) or web server misconfiguration may exist. The domain “autodiscover.doyoudelta.com” resolved to an IP address “50.6.109.161” that does not exist on this server.
+ 
+		cpanel.doyoudelta.com	
+ AutoSSL Domain Validated
+An error occurred the last time AutoSSL ran, on October 7, 2025:
+DNS DCV: No local authority: “cpanel.doyoudelta.com”; HTTP DCV: The system queried for a temporary file at “http://cpanel.doyoudelta.com/.well-known/acme-challenge/1W43YBPYYBL30EVS149XUP1_GOVL1A7S”, but the web server responded with the following error: 404 (Not Found). A DNS (Domain Name System) or web server misconfiguration may exist.
+ 
+		cpcalendars.doyoudelta.com	
+An error occurred the last time AutoSSL ran, on October 7, 2025:
+DNS DCV: No local authority: “cpcalendars.doyoudelta.com”; HTTP DCV: “cpcalendars.doyoudelta.com” does not resolve to any IP addresses on the internet.
+ 
+		cpcontacts.doyoudelta.com	
+An error occurred the last time AutoSSL ran, on October 7, 2025:
+DNS DCV: No local authority: “cpcontacts.doyoudelta.com”; HTTP DCV: “cpcontacts.doyoudelta.com” does not resolve to any IP addresses on the internet.
+ 
+		doyoudelta.com	
+ AutoSSL Domain Validated
+An error occurred the last time AutoSSL ran, on October 7, 2025:
+DNS DCV: No local authority: “doyoudelta.com”; HTTP DCV: The system queried for a temporary file at “http://doyoudelta.com/.well-known/acme-challenge/EOYCZC20HTEQLG6N9V_7S1UQR0-88_85”, but the web server responded with the following error: 404 (Not Found). A DNS (Domain Name System) or web server misconfiguration may exist.
+ 
+		mail.doyoudelta.com	
+An error occurred the last time AutoSSL ran, on October 7, 2025:
+DNS DCV: No local authority: “mail.doyoudelta.com”; HTTP DCV: The system queried for a temporary file at “http://mail.doyoudelta.com/.well-known/acme-challenge/D6CJNLLEB16B_-ZCV14AQ3H8J_OCPGP-”, but the web server responded with the following error: 404 (Not Found). A DNS (Domain Name System) or web server misconfiguration may exist. The domain “mail.doyoudelta.com” resolved to an IP address “50.6.109.161” that does not exist on this server.
+ 
+		webdisk.doyoudelta.com	
+An error occurred the last time AutoSSL ran, on October 7, 2025:
+DNS DCV: No local authority: “webdisk.doyoudelta.com”; HTTP DCV: The system queried for a temporary file at “http://webdisk.doyoudelta.com/.well-known/acme-challenge/LCEG558U4Y9KDVNU_3CQS_IH_9VDWIGD”, but the web server responded with the following error: 400 (Bad Request). A DNS (Domain Name System) or web server misconfiguration may exist. The domain “webdisk.doyoudelta.com” resolved to an IP address “50.6.109.161” that does not exist on this server.
+ 
+		webmail.doyoudelta.com	
+ AutoSSL Domain Validated
+An error occurred the last time AutoSSL ran, on October 7, 2025:
+DNS DCV: No local authority: “webmail.doyoudelta.com”; HTTP DCV: The system queried for a temporary file at “http://webmail.doyoudelta.com/.well-known/acme-challenge/516DANAXW69R6XOSIQWZQGHGXHY6WWRS”, but the web server responded with the following error: 404 (Not Found). A DNS (Domain Name System) or web server misconfiguration may exist.
+ 
+		www.doyoudelta.com	
+ AutoSSL Domain Validated
+An error occurred the last time AutoSSL ran, on October 7, 2025:
+DNS DCV: No local authority: “www.doyoudelta.com”; HTTP DCV: The system queried for a temporary file at “http://www.doyoudelta.com/.well-known/acme-challenge/G3XH4N_EZQMQTRXFG97JU0UTRVQCFLLM”, but the web server responded with the following error: 404 (Not Found). A DNS (Domain Name System) or web server misconfiguration may exist.
+ 
