@@ -1,5 +1,5 @@
-# Delta Tire - Apache Configuration for Bluehost
-# This file routes all requests to your Node.js application
+# Delta Tire - Apache Configuration for Bluehost Shared Hosting
+# Static HTML deployment with SPA routing
 
 # Enable Rewrite Engine
 RewriteEngine On
@@ -8,12 +8,10 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Proxy all requests to Node.js application
-# Replace PORT_NUMBER with your actual port from Bluehost Node.js setup
-RewriteRule ^$ http://127.0.0.1:PORT_NUMBER/ [P,L]
+# SPA Routing - Redirect all requests to index.html (except real files)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ http://127.0.0.1:PORT_NUMBER/$1 [P,L]
+RewriteRule ^.*$ /index.html [L]
 
 # Set proper headers
 <IfModule mod_headers.c>
@@ -39,3 +37,9 @@ RewriteRule ^(.*)$ http://127.0.0.1:PORT_NUMBER/$1 [P,L]
     ExpiresByType application/javascript "access plus 1 month"
     ExpiresByType image/x-icon "access plus 1 year"
 </IfModule>
+
+# Prevent directory browsing
+Options -Indexes
+
+# Set default character set
+AddDefaultCharset UTF-8
