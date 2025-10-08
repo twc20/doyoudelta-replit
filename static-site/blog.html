@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Repair Blog | Tips & Guides | Delta Tire NM AZ</title>
+  <meta name="description" content="Expert auto repair tips, tire maintenance guides, and automotive advice from Delta Tire. Learn about tires, brakes, oil changes & more.">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a href="/" class="logo">Delta Tire</a>
+      <ul class="nav-links">
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/tire-brands.html">Tire Brands</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/tire-pros-warranty.html">Warranty</a></li>
+        <li><a href="/locations.html">Locations</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/careers.html">Careers</a></li>
+      </ul>
+      <button onclick="openLocationModal()" class="btn btn-primary">Call or Text Now</button>
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu">
+      <ul>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/tire-brands.html">Tire Brands</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/tire-pros-warranty.html">Warranty</a></li>
+        <li><a href="/locations.html">Locations</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/careers.html">Careers</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Auto Repair Blog & Tips</h1>
+      <p>Expert automotive advice from the Delta Tire team</p>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="container">
+      <div class="blog-search">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="blog-search" placeholder="Search articles...">
+      </div>
+
+      <div class="blog-filters">
+        <button class="filter-btn active" data-category="All">All</button>
+        <button class="filter-btn" data-category="Tire Maintenance">Tire Maintenance</button>
+        <button class="filter-btn" data-category="Maintenance Tips">Maintenance Tips</button>
+        <button class="filter-btn" data-category="Safety">Safety</button>
+        <button class="filter-btn" data-category="Tire Guide">Tire Guide</button>
+        <button class="filter-btn" data-category="Truck Accessories">Truck Accessories</button>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card blog-article" data-title="when should you replace your tires? 5 warning signs" data-excerpt="learn the critical warning signs that indicate it's time for new tires." data-tags="tire safety maintenance tire replacement" data-category="Tire Maintenance">
+          <span class="badge">Tire Maintenance</span>
+          <h3 style="margin: 1rem 0 0.5rem;">When Should You Replace Your Tires? 5 Warning Signs</h3>
+          <p class="text-gray-600 line-clamp-3">Learn the critical warning signs that indicate it's time for new tires. From tread depth to age, we cover everything you need to know to stay safe on the road.</p>
+          <a href="/blog/when-to-replace-tires.html" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Read More</a>
+        </div>
+        
+        <div class="card blog-article" data-title="oil change myths: how often do you really need service?" data-excerpt="the 3,000-mile oil change rule is outdated. find out how often your car needs an oil change." data-tags="oil change maintenance synthetic oil" data-category="Maintenance Tips">
+          <span class="badge">Maintenance Tips</span>
+          <h3 style="margin: 1rem 0 0.5rem;">Oil Change Myths: How Often Do You Really Need Service?</h3>
+          <p class="text-gray-600 line-clamp-3">The 3,000-mile oil change rule is outdated. Modern vehicles and synthetic oils have changed the game. Find out how often YOUR car needs an oil change.</p>
+          <a href="/blog/oil-change-myths.html" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Read More</a>
+        </div>
+        
+        <div class="card blog-article" data-title="all-terrain vs. mud-terrain tires: which is right for your truck?" data-excerpt="choosing between all-terrain and mud-terrain tires? we help you decide." data-tags="truck tires all-terrain mud-terrain buying guide" data-category="Tire Guide">
+          <span class="badge">Tire Guide</span>
+          <h3 style="margin: 1rem 0 0.5rem;">All-Terrain vs. Mud-Terrain Tires: Which is Right for Your Truck?</h3>
+          <p class="text-gray-600 line-clamp-3">Choosing between all-terrain and mud-terrain tires? We break down the differences, pros, cons, and help you decide which tire type matches your driving needs.</p>
+          <a href="/blog/at-vs-mt-tires.html" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Read More</a>
+        </div>
+        
+        <div class="card blog-article" data-title="brake warning signs you should never ignore" data-excerpt="squealing, grinding, or a soft pedal? these brake warning signs require immediate attention." data-tags="brakes safety warning signs" data-category="Safety">
+          <span class="badge">Safety</span>
+          <h3 style="margin: 1rem 0 0.5rem;">Brake Warning Signs You Should Never Ignore</h3>
+          <p class="text-gray-600 line-clamp-3">Squealing, grinding, or a soft pedal? These brake warning signs require immediate attention. Learn what each symptom means and when to get service.</p>
+          <a href="/blog/brake-warning-signs.html" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Read More</a>
+        </div>
+        
+        <div class="card blog-article" data-title="winter driving in the four corners: essential tips" data-excerpt="driving in new mexico and arizona winter conditions requires preparation." data-tags="winter driving safety four corners" data-category="Safety">
+          <span class="badge">Safety</span>
+          <h3 style="margin: 1rem 0 0.5rem;">Winter Driving in the Four Corners: Essential Tips</h3>
+          <p class="text-gray-600 line-clamp-3">Driving in New Mexico and Arizona winter conditions requires preparation. Our comprehensive guide covers tires, emergency supplies, and safe driving techniques.</p>
+          <a href="/blog/winter-driving-tips.html" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Read More</a>
+        </div>
+        
+        <div class="card blog-article" data-title="how wheel alignment saves you money on tires" data-excerpt="proper wheel alignment can extend your tire life by thousands of miles." data-tags="alignment tire life save money" data-category="Tire Maintenance">
+          <span class="badge">Tire Maintenance</span>
+          <h3 style="margin: 1rem 0 0.5rem;">How Wheel Alignment Saves You Money on Tires</h3>
+          <p class="text-gray-600 line-clamp-3">Proper wheel alignment can extend your tire life by thousands of miles. Learn how misalignment damages tires and costs you money.</p>
+          <a href="/blog/alignment-saves-money.html" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid grid-4">
+        <div><h3>Delta Tire</h3><p>Professional tire service and auto repair across New Mexico and Arizona. Treating your car like our car since 2015.</p></div>
+        <div><h3>Quick Links</h3><ul><li><a href="/services.html">Services</a></li><li><a href="/tire-brands.html">Tire Brands</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/locations.html">Locations</a></li></ul></div>
+        <div><h3>Special Programs</h3><ul><li><a href="/tire-pros-warranty.html">Tire Pros Warranty</a></li><li><a href="/vip.html">VIP School Fundraising</a></li><li><a href="/fleet.html">Fleet Services</a></li><li><a href="/faq.html">FAQ</a></li></ul></div>
+        <div><h3>Contact</h3><p>Grants: <a href="tel:5052877946">(505) 287-7946</a></p><p>Gallup: <a href="tel:5057222945">(505) 722-2945</a></p><p>Farmington: <a href="tel:5053254500">(505) 325-4500</a></p><p>Eagar: <a href="tel:9283333730">(928) 333-3730</a></p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 Delta Tire. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <div id="location-modal" class="modal">
+    <div class="modal-content">
+      <button onclick="closeLocationModal()" class="modal-close" aria-label="Close modal">&times;</button>
+      <h2 style="margin-bottom: 1.5rem;">Select Your Location</h2>
+      <div class="location-card"><h3>Grants, NM</h3><p>517 E Santa Fe Ave, Grants, NM 87020</p><p><strong>(505) 287-7946</strong></p><div class="location-buttons"><a href="tel:5052877946" class="btn btn-primary">Call Now</a><a href="sms:5052877946?&body=Hey!%20I%20was%20on%20your%20website%20and%20need%20to%20schedule%20a%20visit.%20Can%20you%20help%20me%20out%3F" class="btn btn-secondary">Text Now</a></div></div>
+      <div class="location-card"><h3>Gallup, NM</h3><p>1705 S 2nd St, Gallup, NM 87301</p><p><strong>(505) 722-2945</strong></p><div class="location-buttons"><a href="tel:5057222945" class="btn btn-primary">Call Now</a><a href="sms:5057222945?&body=Hey!%20I%20was%20on%20your%20website%20and%20need%20to%20schedule%20a%20visit.%20Can%20you%20help%20me%20out%3F" class="btn btn-secondary">Text Now</a></div></div>
+      <div class="location-card"><h3>Farmington, NM</h3><p>3400 E Main St, Farmington, NM 87402</p><p><strong>(505) 325-4500</strong></p><div class="location-buttons"><a href="tel:5053254500" class="btn btn-primary">Call Now</a><a href="sms:5053254500?&body=Hey!%20I%20was%20on%20your%20website%20and%20need%20to%20schedule%20a%20visit.%20Can%20you%20help%20me%20out%3F" class="btn btn-secondary">Text Now</a></div></div>
+      <div class="location-card"><h3>Eagar, AZ</h3><p>33 N Main St, Eagar, AZ 85925</p><p><strong>(928) 333-3730</strong></p><div class="location-buttons"><a href="tel:9283333730" class="btn btn-primary">Call Now</a><a href="sms:9283333730?&body=Hey!%20I%20was%20on%20your%20website%20and%20need%20to%20schedule%20a%20visit.%20Can%20you%20help%20me%20out%3F" class="btn btn-secondary">Text Now</a></div></div>
+    </div>
+  </div>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
