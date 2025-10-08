@@ -28,47 +28,205 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="/assets/css/styles.css">
   
-  <!-- Structured Data for Local Business -->
+  <!-- Structured Data for Organization with Multiple Locations -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AutoRepair",
+    "@type": "Organization",
     "name": "Delta Tire",
-    "description": "Professional tire service and auto repair across New Mexico and Arizona",
+    "description": "Professional tire service and auto repair across New Mexico and Arizona. Serving the Four Corners region since 2015.",
     "url": "https://doyoudelta.com",
+    "logo": "https://doyoudelta.com/assets/images/delta-tire-logo.png",
     "telephone": "+1-505-287-7946",
-    "priceRange": "$$",
-    "image": "https://doyoudelta.com/assets/images/delta-tire-logo.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "517 E Santa Fe Ave",
-      "addressLocality": "Grants",
-      "addressRegion": "NM",
-      "postalCode": "87020",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "35.1478",
-      "longitude": "-107.8528"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "08:00",
-        "closes": "13:00"
-      }
-    ],
     "sameAs": [
       "https://www.facebook.com/deltatire",
       "https://www.instagram.com/deltatire"
+    ],
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "New Mexico"
+      },
+      {
+        "@type": "State",
+        "name": "Arizona"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Automotive Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tire Sales & Service",
+            "description": "New tire sales, tire installation, tire repair, and tire rotation"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Oil Change Service",
+            "description": "Conventional and synthetic oil changes with filter replacement"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Brake Repair",
+            "description": "Brake pad replacement, rotor service, brake fluid service"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Wheel Alignment",
+            "description": "Computerized wheel alignment and suspension service"
+          }
+        }
+      ]
+    },
+    "location": [
+      {
+        "@type": "AutoRepair",
+        "@id": "https://doyoudelta.com/locations#grants",
+        "name": "Delta Tire - Grants",
+        "telephone": "+1-505-287-7946",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "517 E Santa Fe Ave",
+          "addressLocality": "Grants",
+          "addressRegion": "NM",
+          "postalCode": "87020",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "35.1478",
+          "longitude": "-107.8528"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "13:00"
+          }
+        ]
+      },
+      {
+        "@type": "AutoRepair",
+        "@id": "https://doyoudelta.com/locations#gallup",
+        "name": "Delta Tire - Gallup",
+        "telephone": "+1-505-722-2945",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1705 S 2nd St",
+          "addressLocality": "Gallup",
+          "addressRegion": "NM",
+          "postalCode": "87301",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "35.5175",
+          "longitude": "-108.7426"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "13:00"
+          }
+        ]
+      },
+      {
+        "@type": "AutoRepair",
+        "@id": "https://doyoudelta.com/locations#farmington",
+        "name": "Delta Tire - Farmington",
+        "telephone": "+1-505-325-4500",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3400 E Main St",
+          "addressLocality": "Farmington",
+          "addressRegion": "NM",
+          "postalCode": "87402",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "36.7280",
+          "longitude": "-108.1687"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "13:00"
+          }
+        ]
+      },
+      {
+        "@type": "AutoRepair",
+        "@id": "https://doyoudelta.com/locations#eagar",
+        "name": "Delta Tire - Eagar",
+        "telephone": "+1-928-333-3730",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "33 N Main St",
+          "addressLocality": "Eagar",
+          "addressRegion": "AZ",
+          "postalCode": "85925",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "34.1116",
+          "longitude": "-109.2948"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "13:00"
+          }
+        ]
+      }
     ]
   }
   </script>

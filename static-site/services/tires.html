@@ -17,6 +17,92 @@
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Tire Sales, Installation & Repair",
+    "provider": {
+      "@type": "AutoRepair",
+      "name": "Delta Tire",
+      "url": "https://doyoudelta.com"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Grants",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "New Mexico"
+        }
+      },
+      {
+        "@type": "City",
+        "name": "Gallup",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "New Mexico"
+        }
+      },
+      {
+        "@type": "City",
+        "name": "Farmington",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "New Mexico"
+        }
+      },
+      {
+        "@type": "City",
+        "name": "Eagar",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Arizona"
+        }
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tire Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "New Tire Sales",
+            "description": "All major tire brands including Michelin, Goodyear, BFGoodrich, and more"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tire Installation",
+            "description": "Professional mounting, balancing, and installation service"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tire Repair",
+            "description": "Puncture repair and tire patching service"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tire Rotation",
+            "description": "Regular tire rotation to extend tire life"
+          }
+        }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   
