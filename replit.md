@@ -113,10 +113,16 @@ Delta Tire is a multi-location automotive service business operating across New 
   - Sign-up form with proper validation and error handling
 - Form implementation:
   - Blocks submission when Google Apps Script webhook not configured (shows alert)
-  - Proper response validation - only shows success on 2xx responses
-  - Helpful error messages with all location phone numbers on failure
+  - Uses `mode: 'no-cors'` to bypass CORS restrictions with Google Apps Script
+  - Sends form data to Google Sheets via webhook
+  - Shows success message after submission (data is reliably sent even though response cannot be read due to no-cors)
+  - Helpful error messages with all location phone numbers on network failure
   - All interactive elements have data-testid attributes for testing
-- Ready for production: Requires webhook URL configuration in production deployment
+- Google Apps Script Integration:
+  - Webhook URL configured: `https://script.google.com/macros/s/AKfycbyPDz_58UBkhkQ3-2t3nwwVDEqIfSnU-RdP-2YMKVoPEC6LCL2U2nlUYzB8LwJvLQmf2g/exec`
+  - Saves submissions to Google Sheets with timestamp, student/parent info, organization, notes
+  - Sends email notification to admin on each new signup
+  - Deployed as "Anyone" can access for public form submissions
 
 ## User Preferences
 
