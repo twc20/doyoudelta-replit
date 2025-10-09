@@ -44,15 +44,23 @@ npm start
 
 ## 🌐 Deployment
 
-### Vercel (Current)
-1. Connected to GitHub: `twc20/doyoudelta-replit`
-2. Auto-deploys on push to `main` branch
-3. Build command: `npm run build`
-4. Output directory: `dist/public`
+### Vercel (Current - Static Site)
+The site is deployed as a **static site** (no backend required in production):
+
+1. **Connected to GitHub**: `twc20/doyoudelta-replit`
+2. **Auto-deploys** on push to `main` branch
+3. **Build command**: `npm run build`
+4. **Output directory**: `dist/public`
+
+### Why Static?
+- ✅ Fundraising forms → Client-side Google Sheets integration
+- ✅ Appointments → Direct SMS links (no backend needed)
+- ✅ Contact form → Frontend-only (can add Google Apps Script later)
+- ✅ All content is static (blog, services, locations)
+- ✅ Faster, cheaper, more reliable than running a Node.js server
 
 ### Environment Variables
-- `SESSION_SECRET` - Session encryption key (auto-set in Replit)
-- `DATABASE_URL` - PostgreSQL connection (if using database)
+None required for production. Backend features (Express server, GitHub API) are development-only.
 
 ## 📝 VIP Fundraising Pages
 

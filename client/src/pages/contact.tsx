@@ -32,20 +32,25 @@ export default function Contact() {
 
   const contactMutation = useMutation({
     mutationFn: async (data: ContactFormData) => {
-      return apiRequest("POST", "/api/contact", data);
+      // Static site - just log the contact form data
+      // For email integration, add Google Apps Script webhook or email service
+      console.log("Contact form submission:", data);
+      
+      // Simulate processing
+      return new Promise((resolve) => setTimeout(resolve, 500));
     },
     onSuccess: () => {
       toast({
-        title: "Message Sent!",
-        description: "We'll get back to you as soon as possible.",
+        title: "Thank You for Your Message!",
+        description: "For immediate assistance, please call us directly at your nearest location.",
       });
       form.reset();
     },
     onError: () => {
       toast({
-        title: "Error",
-        description: "Failed to send message. Please try again or call us directly.",
-        variant: "destructive"
+        title: "Note",
+        description: "Please call us directly for immediate assistance.",
+        variant: "default"
       });
     }
   });
