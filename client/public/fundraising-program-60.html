@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP Card Fundraising Program | Delta Tire</title>
+  <meta name="description" content="Raise money for your organization with Delta Tire VIP cards. $60 cards with valuable benefits - your organization keeps $50 per card sold.">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a href="/" class="logo">Delta Tire</a>
+      <ul class="nav-links">
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/tire-brands.html">Tire Brands</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/tire-pros-warranty.html">Warranty</a></li>
+        <li><a href="/locations.html">Locations</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/careers.html">Careers</a></li>
+      </ul>
+      <button onclick="openLocationModal()" class="btn btn-primary">Call or Text Now</button>
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu">
+      <ul><li><a href="/services.html">Services</a></li><li><a href="/tire-brands.html">Tire Brands</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/tire-pros-warranty.html">Warranty</a></li><li><a href="/locations.html">Locations</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/careers.html">Careers</a></li></ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>VIP Card Fundraising Program</h1>
+      <p>Effortless fundraising that sells itself</p>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="container">
+      <div class="grid grid-2">
+        <div>
+          <h2>Raise Money the Easy Way</h2>
+          <p class="text-gray-600" style="margin-bottom: 1.5rem;">Our VIP Card program is a win-win for everyone. Families get incredible value on services they already need, and your organization raises money without selling candy bars or wrapping paper.</p>
+          
+          <h3 style="margin-top: 2rem;">Here's How It Works:</h3>
+          <ul class="checkmark-list">
+            <li>Cards sell for <strong>$60</strong> (all processing fees added on top)</li>
+            <li>Your organization keeps <strong>$50</strong> from every card sold</li>
+            <li>Supporters get real value they'll actually use</li>
+            <li>No inventory, no upfront costs, no hassle</li>
+          </ul>
+
+          <h3 style="margin-top: 2rem;">What Card Holders Get:</h3>
+          <ul class="checkmark-list">
+            <li><strong>1 Free Oil Change</strong> (up to 5 quarts conventional oil)</li>
+            <li><strong>10% Off All Services</strong> for one full year</li>
+            <li><strong>$50 Off Shield Leasing</strong> (new tire purchases)</li>
+          </ul>
+
+          <p class="text-gray-600" style="margin-top: 1.5rem;">These are services people buy anyway - now they save money while supporting your cause!</p>
+        </div>
+
+        <div>
+          <!-- Placeholder for VIP Card Image -->
+          <div class="card" style="background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%); padding: 3rem; text-align: center; min-height: 300px; display: flex; align-items: center; justify-content: center;">
+            <div>
+              <svg width="100" height="100" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1rem;">
+                <rect x="10" y="25" width="80" height="50" rx="5"/>
+                <line x1="10" y1="40" x2="90" y2="40"/>
+                <line x1="20" y1="52" x2="50" y2="52"/>
+                <line x1="20" y1="60" x2="70" y2="60"/>
+              </svg>
+              <p class="text-gray-600"><em>VIP Card Image Coming Soon</em></p>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top: 1.5rem; background-color: #fef3c7; border-left: 4px solid #f59e0b;">
+            <h3 style="color: #92400e; margin-bottom: 0.75rem;">Why This Program Works</h3>
+            <p style="color: #92400e; margin: 0;">People are going to get oil changes anyway. With VIP cards, they get a great deal while supporting your team, club, or organization. It's an easy sell!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #f9fafb; padding: 4rem 0;">
+    <div class="container" style="max-width: 600px;">
+      <h2 style="text-align: center; margin-bottom: 1rem;">Sign Up Your Student</h2>
+      <p class="text-gray-600" style="text-align: center; margin-bottom: 2rem;">Fill out the form below to get your student registered for the VIP card fundraiser.</p>
+
+      <form id="vip-signup-form" class="card">
+        <div style="margin-bottom: 1.5rem;">
+          <label for="student-name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Student Name *</label>
+          <input type="text" id="student-name" name="studentName" required style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 0.375rem; font-size: 1rem;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="parent-name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Parent/Guardian Name *</label>
+          <input type="text" id="parent-name" name="parentName" required style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 0.375rem; font-size: 1rem;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="parent-email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Parent Email *</label>
+          <input type="email" id="parent-email" name="parentEmail" required style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 0.375rem; font-size: 1rem;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="parent-phone" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Parent Phone *</label>
+          <input type="tel" id="parent-phone" name="parentPhone" required style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 0.375rem; font-size: 1rem;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="organization" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Organization/Club Name *</label>
+          <input type="text" id="organization" name="organization" required placeholder="e.g., Grants Basketball, Gallup Band" style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 0.375rem; font-size: 1rem;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <label for="notes" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Additional Notes (Optional)</label>
+          <textarea id="notes" name="notes" rows="3" style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 0.375rem; font-size: 1rem;"></textarea>
+        </div>
+
+        <input type="hidden" name="pricingTier" value="$60">
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Sign-Up</button>
+      </form>
+
+      <div id="success-message" style="display: none; margin-top: 2rem; padding: 1.5rem; background-color: #d1fae5; border-radius: 0.5rem; text-align: center;">
+        <h3 style="color: #065f46; margin-bottom: 0.5rem;">Thank You!</h3>
+        <p style="color: #065f46; margin: 0;">We've received your sign-up and will be in touch soon with details about the fundraiser.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Delta Tire</h3>
+          <p>Professional automotive service across New Mexico and Arizona since 2015.</p>
+          <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem;">
+            <span>Proud Member of</span>
+            <img src="/assets/images/tire-pros-logo.png" alt="Tire Pros" style="height: 40px;">
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/locations.html">Locations</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Grants: (505) 287-7946<br>Gallup: (505) 722-2945<br>Farmington: (505) 325-4500<br>Eagar: (928) 333-3730</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Delta Tire. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="location-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeLocationModal()">&times;</span>
+      <h2 style="margin-bottom: 1.5rem;">Choose Your Location</h2>
+      <div class="location-grid">
+        <div class="location-card">
+          <h3>Grants, NM</h3>
+          <p>517 E Santa Fe Ave<br>Grants, NM 87020</p>
+          <p class="phone">(505) 287-7946</p>
+          <div class="location-actions">
+            <a href="tel:5052877946" class="btn btn-primary">Call Now</a>
+            <a href="sms:5052877946?&body=Hey!%20I%20was%20on%20your%20website%20and%20need%20to%20schedule%20a%20visit.%20Can%20you%20help%20me%20out%3F" class="btn btn-secondary">Text Now</a>
+          </div>
+        </div>
+        <div class="location-card">
+          <h3>Gallup, NM</h3>
+          <p>1705 S 2nd St<br>Gallup, NM 87301</p>
+          <p class="phone">(505) 722-2945</p>
+          <div class="location-actions">
+            <a href="tel:5057222945" class="btn btn-primary">Call Now</a>
+            <a href="sms:5057222945?&body=Hey!%20I%20was%20on%20your%20website%20and%20need%20to%20schedule%20a%20visit.%20Can%20you%20help%20me%20out%3F" class="btn btn-secondary">Text Now</a>
+          </div>
+        </div>
+        <div class="location-card">
+          <h3>Farmington, NM</h3>
+          <p>3400 E Main St<br>Farmington, NM 87402</p>
+          <p class="phone">(505) 325-4500</p>
+          <div class="location-actions">
+            <a href="tel:5053254500" class="btn btn-primary">Call Now</a>
+            <a href="sms:5053254500?&body=Hey!%20I%20was%20on%20your%20website%20and%20need%20to%20schedule%20a%20visit.%20Can%20you%20help%20me%20out%3F" class="btn btn-secondary">Text Now</a>
+          </div>
+        </div>
+        <div class="location-card">
+          <h3>Eagar, AZ</h3>
+          <p>33 N Main St<br>Eagar, AZ 85925</p>
+          <p class="phone">(928) 333-3730</p>
+          <div class="location-actions">
+            <a href="tel:9283333730" class="btn btn-primary">Call Now</a>
+            <a href="sms:9283333730?&body=Hey!%20I%20was%20on%20your%20website%20and%20need%20to%20schedule%20a%20visit.%20Can%20you%20help%20me%20out%3F" class="btn btn-secondary">Text Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/main.js"></script>
+  <script>
+    // TODO: Replace 'YOUR_APPS_SCRIPT_WEBHOOK_URL' with your actual Google Apps Script webhook URL
+    const WEBHOOK_URL = 'YOUR_APPS_SCRIPT_WEBHOOK_URL';
+    const PRICING_TIER = '$60';
+
+    document.getElementById('vip-signup-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const formData = {
+        timestamp: new Date().toISOString(),
+        studentName: document.getElementById('student-name').value,
+        parentName: document.getElementById('parent-name').value,
+        parentEmail: document.getElementById('parent-email').value,
+        parentPhone: document.getElementById('parent-phone').value,
+        organization: document.getElementById('organization').value,
+        notes: document.getElementById('notes').value,
+        pricingTier: PRICING_TIER,
+        pageSource: window.location.href
+      };
+
+      try {
+        const response = await fetch(WEBHOOK_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData)
+        });
+
+        // Show success message
+        document.getElementById('vip-signup-form').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
+        
+        // Scroll to success message
+        document.getElementById('success-message').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('There was an error submitting the form. Please try again or contact us directly.');
+      }
+    });
+  </script>
+</body>
+</html>
