@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP Card Fundraising Program | Delta Tire</title>
+  <meta name="description" content="Raise money for your school or organization with Delta Tire VIP cards. Your organization keeps 80% or more of proceeds!">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    
+    .vip-hero {
+      background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+      color: white;
+      padding: 5rem 0;
+      text-align: center;
+    }
+    
+    .vip-hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    
+    .vip-hero p {
+      font-size: 1.5rem;
+      opacity: 0.95;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .benefit-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .benefit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+    
+    .benefit-icon {
+      width: 60px;
+      height: 60px;
+      background: #fee2e2;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .benefit-icon svg {
+      width: 32px;
+      height: 32px;
+      color: #dc2626;
+    }
+    
+    .benefit-card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 0.75rem;
+    }
+    
+    .benefit-card p {
+      color: #6b7280;
+      line-height: 1.6;
+    }
+    
+    .stats-section {
+      background: #f9fafb;
+      padding: 4rem 0;
+      text-align: center;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 900px;
+      margin: 2rem auto 0;
+    }
+    
+    .stat-item {
+      padding: 1.5rem;
+    }
+    
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #dc2626;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    
+    .stat-label {
+      color: #6b7280;
+      font-size: 1rem;
+    }
+    
+    .vip-card-showcase {
+      text-align: center;
+      padding: 3rem 0;
+    }
+    
+    .vip-card-showcase img {
+      max-width: 600px;
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .form-section {
+      background: white;
+      padding: 4rem 0;
+    }
+    
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #f9fafb;
+      padding: 3rem;
+      border-radius: 16px;
+    }
+    
+    .form-container h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+    .form-container .subtitle {
+      color: #6b7280;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      font-weight: 500;
+      color: #374151;
+      margin-bottom: 0.5rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.875rem;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+      background: white;
+    }
+    
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #dc2626;
+    }
+    
+    .submit-btn {
+      background: #dc2626;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      width: 100%;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    
+    .submit-btn:hover {
+      background: #b91c1c;
+    }
+    
+    .success-message {
+      display: none;
+      background: #d1fae5;
+      border: 2px solid #34d399;
+      color: #065f46;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    
+    .how-it-works {
+      padding: 4rem 0;
+      background: white;
+    }
+    
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+    
+    .step-card {
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .step-number {
+      width: 50px;
+      height: 50px;
+      background: #dc2626;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 auto 1.5rem;
+    }
+    
+    .step-card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 0.75rem;
+    }
+    
+    .step-card p {
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .vip-hero h1 {
+        font-size: 2rem;
+      }
+      
+      .vip-hero p {
+        font-size: 1.125rem;
+      }
+      
+      .form-container {
+        padding: 2rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a href="/" class="logo">Delta Tire</a>
+      <ul class="nav-links">
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/tire-brands.html">Tire Brands</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/tire-pros-warranty.html">Warranty</a></li>
+        <li><a href="/locations.html">Locations</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/careers.html">Careers</a></li>
+      </ul>
+      <button onclick="openLocationModal()" class="btn btn-primary">Call or Text Now</button>
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu">
+      <ul><li><a href="/services.html">Services</a></li><li><a href="/tire-brands.html">Tire Brands</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/tire-pros-warranty.html">Warranty</a></li><li><a href="/locations.html">Locations</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/careers.html">Careers</a></li></ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="vip-hero">
+    <div class="container">
+      <h1>VIP Card Fundraising Program</h1>
+      <p>Support your school while giving families real value on automotive services</p>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <h2 style="font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 0.5rem;">Built for Success</h2>
+      <p style="color: #6b7280; font-size: 1.125rem; margin-bottom: 1rem;">Real fundraising, real value</p>
+      
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-testid="stat-proceeds">80%+</div>
+          <div class="stat-label">Goes to Your Organization</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-testid="stat-upfront">$0</div>
+          <div class="stat-label">Upfront Costs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-testid="stat-value">100%</div>
+          <div class="stat-label">Real Value for Families</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 style="font-size: 2.5rem; font-weight: 700; color: #1f2937; text-align: center; margin-bottom: 1rem;">How It Works</h2>
+      <p style="color: #6b7280; text-align: center; font-size: 1.125rem;">Simple fundraising in 3 easy steps</p>
+      
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Register Your Students</h3>
+          <p>Fill out the simple form below to get your students signed up for the program</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Students Sell VIP Cards</h3>
+          <p>Students share VIP cards with family and friends who get real value on automotive services</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Your Organization Profits</h3>
+          <p>Your school or club keeps 80% or more of the proceeds while Delta handles administration</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP Card Showcase -->
+  <section class="vip-card-showcase" style="background: #f9fafb;">
+    <div class="container">
+      <h2 style="font-size: 2.5rem; font-weight: 700; color: #1f2937; margin-bottom: 2rem;">What Card Holders Receive</h2>
+      <img src="/images/vip-card.png" alt="Delta Tire VIP Card Benefits" data-testid="img-vip-card" />
+      
+      <div class="benefits-grid" style="margin-top: 3rem;">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3>1 Free Oil Change</h3>
+          <p>Up to 5 quarts of conventional oil, a $40+ value</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+            </svg>
+          </div>
+          <h3>10% Off All Services</h3>
+          <p>Valid for one full year on all automotive services</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3>$50 Off Shield Leasing</h3>
+          <p>Apply towards new tire purchases with our Shield program</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sign-Up Form -->
+  <section class="form-section">
+    <div class="container">
+      <div class="form-container">
+        <h2>Sign Up Your Student</h2>
+        <p class="subtitle">Start fundraising today - it's quick and easy to register</p>
+        
+        <form id="vip-signup-form" data-testid="form-vip-signup">
+          <div class="form-group">
+            <label for="student-name">Student Name *</label>
+            <input type="text" id="student-name" name="studentName" required data-testid="input-student-name">
+          </div>
+
+          <div class="form-group">
+            <label for="parent-name">Parent/Guardian Name *</label>
+            <input type="text" id="parent-name" name="parentName" required data-testid="input-parent-name">
+          </div>
+
+          <div class="form-group">
+            <label for="parent-email">Parent Email *</label>
+            <input type="email" id="parent-email" name="parentEmail" required data-testid="input-parent-email">
+          </div>
+
+          <div class="form-group">
+            <label for="parent-phone">Parent Phone *</label>
+            <input type="tel" id="parent-phone" name="parentPhone" required data-testid="input-parent-phone">
+          </div>
+
+          <div class="form-group">
+            <label for="organization">School/Organization Name *</label>
+            <input type="text" id="organization" name="organization" required placeholder="e.g., Grants High School Basketball" data-testid="input-organization">
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Additional Notes (Optional)</label>
+            <textarea id="notes" name="notes" rows="3" data-testid="textarea-notes"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn" data-testid="button-submit-vip">Submit Registration</button>
+        </form>
+
+        <div id="success-message" class="success-message" data-testid="message-success">
+          <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Thank You!</h3>
+          <p style="margin: 0;">We've received your registration and will be in touch soon with details about the fundraiser.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Delta Tire</h3>
+          <p>Professional automotive service across New Mexico and Arizona since 2015.</p>
+          <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem;">
+            <span>Proud Member of</span>
+            <img src="/assets/images/tire-pros-logo.png" alt="Tire Pros" style="height: 40px;">
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/locations.html">Locations</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Grants: (505) 287-7946<br>Gallup: (505) 722-2945<br>Farmington: (505) 325-4500<br>Eagar: (928) 333-3730</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Delta Tire. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="location-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeLocationModal()">&times;</span>
+      <h2 style="margin-bottom: 1.5rem;">Choose Your Location</h2>
+      <div class="location-grid">
+        <div class="location-card">
+          <h3>Grants, NM</h3>
+          <p>517 E Santa Fe Ave<br>Grants, NM 87020</p>
+          <p class="phone">(505) 287-7946</p>
+          <div class="location-actions">
+            <a href="tel:5052877946" class="btn btn-primary">Call Now</a>
+            <a href="sms:5052877946" class="btn btn-secondary">Text Now</a>
+          </div>
+        </div>
+        <div class="location-card">
+          <h3>Gallup, NM</h3>
+          <p>1705 S 2nd St<br>Gallup, NM 87301</p>
+          <p class="phone">(505) 722-2945</p>
+          <div class="location-actions">
+            <a href="tel:5057222945" class="btn btn-primary">Call Now</a>
+            <a href="sms:5057222945" class="btn btn-secondary">Text Now</a>
+          </div>
+        </div>
+        <div class="location-card">
+          <h3>Farmington, NM</h3>
+          <p>3400 E Main St<br>Farmington, NM 87402</p>
+          <p class="phone">(505) 325-4500</p>
+          <div class="location-actions">
+            <a href="tel:5053254500" class="btn btn-primary">Call Now</a>
+            <a href="sms:5053254500" class="btn btn-secondary">Text Now</a>
+          </div>
+        </div>
+        <div class="location-card">
+          <h3>Eagar, AZ</h3>
+          <p>33 N Main St<br>Eagar, AZ 85925</p>
+          <p class="phone">(928) 333-3730</p>
+          <div class="location-actions">
+            <a href="tel:9283333730" class="btn btn-primary">Call Now</a>
+            <a href="sms:9283333730" class="btn btn-secondary">Text Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/main.js"></script>
+  <script>
+    // TODO: Replace with your actual Google Apps Script webhook URL
+    const WEBHOOK_URL = 'YOUR_APPS_SCRIPT_WEBHOOK_URL';
+
+    document.getElementById('vip-signup-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      // Check if webhook is configured
+      if (WEBHOOK_URL === 'YOUR_APPS_SCRIPT_WEBHOOK_URL') {
+        alert('VIP Fundraising form is not yet configured. Please contact Delta Tire directly at one of our locations to sign up for the fundraising program.');
+        return;
+      }
+      
+      const formData = {
+        timestamp: new Date().toISOString(),
+        studentName: document.getElementById('student-name').value,
+        parentName: document.getElementById('parent-name').value,
+        parentEmail: document.getElementById('parent-email').value,
+        parentPhone: document.getElementById('parent-phone').value,
+        organization: document.getElementById('organization').value,
+        notes: document.getElementById('notes').value,
+        pageSource: window.location.href
+      };
+
+      try {
+        const response = await fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData)
+        });
+
+        // Check if submission was successful
+        if (response.ok) {
+          // Show success message
+          document.getElementById('vip-signup-form').style.display = 'none';
+          document.getElementById('success-message').style.display = 'block';
+        } else {
+          throw new Error(`Server responded with ${response.status}`);
+        }
+        
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('There was an error submitting your registration. Please try calling us directly at one of our locations:\n\nGrants: (505) 287-7946\nGallup: (505) 722-2945\nFarmington: (505) 325-4500\nEagar: (928) 333-3730');
+      }
+    });
+  </script>
+</body>
+</html>
