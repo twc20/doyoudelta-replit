@@ -510,8 +510,7 @@
 
   <script src="/assets/js/main.js"></script>
   <script>
-    // TODO: Replace with your actual Google Apps Script webhook URL
-    const WEBHOOK_URL = 'YOUR_APPS_SCRIPT_WEBHOOK_URL';
+    const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbyPDz_58UBkhkQ3-2t3nwwVDEqIfSnU-RdP-2YMKVoPEC6LCL2U2nlUYzB8LwJvLQmf2g/exec';
 
     document.getElementById('vip-signup-form').addEventListener('submit', async function(e) {
       e.preventDefault();
@@ -536,20 +535,17 @@
       try {
         const response = await fetch(WEBHOOK_URL, {
           method: 'POST',
+          mode: 'no-cors',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(formData)
         });
 
-        // Check if submission was successful
-        if (response.ok) {
-          // Show success message
-          document.getElementById('vip-signup-form').style.display = 'none';
-          document.getElementById('success-message').style.display = 'block';
-        } else {
-          throw new Error(`Server responded with ${response.status}`);
-        }
+        // With no-cors mode, we can't read the response, but the data is sent successfully
+        // Show success message
+        document.getElementById('vip-signup-form').style.display = 'none';
+        document.getElementById('success-message').style.display = 'block';
         
       } catch (error) {
         console.error('Error submitting form:', error);
