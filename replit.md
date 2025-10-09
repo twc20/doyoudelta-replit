@@ -97,6 +97,27 @@ Delta Tire is a multi-location automotive service business operating across New 
   - Consistent with SMS-based communication strategy across the site
 - No backend needed - fully client-side functionality
 
+**VIP Fundraising Program Consolidation**
+- Consolidated two separate fundraising tiers (60% and 75%) into single generic program
+- New unified page at `/vip-fundraising.html` with modern, professional design
+- Updated messaging: Organizations get 80%+ of proceeds, Delta keeps small admin fee
+- Legacy URLs redirect automatically:
+  - `/fundraising-program-60.html` → `/vip-fundraising.html`
+  - `/fundraising-program-75.html` → `/vip-fundraising.html`
+- Page features:
+  - Gradient hero section with main value proposition
+  - Stats section: 80%+ to organization, $0 upfront costs, 100% real value
+  - "How It Works" 3-step process with numbered icons
+  - VIP card image showcase
+  - Benefits cards (Free Oil Change, 10% Off All Services, $50 Off Shield Leasing)
+  - Sign-up form with proper validation and error handling
+- Form implementation:
+  - Blocks submission when Google Apps Script webhook not configured (shows alert)
+  - Proper response validation - only shows success on 2xx responses
+  - Helpful error messages with all location phone numbers on failure
+  - All interactive elements have data-testid attributes for testing
+- Ready for production: Requires webhook URL configuration in production deployment
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
