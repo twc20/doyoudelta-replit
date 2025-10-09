@@ -108,9 +108,14 @@ Delta Tire is a multi-location automotive service business operating across New 
   - Gradient hero section with main value proposition
   - Stats section: 80%+ to organization, $0 upfront costs, 100% real value
   - "How It Works" 3-step process with numbered icons
-  - VIP card image showcase
+  - VIP card image showcase (updated with cleaned version)
   - Benefits cards (Free Oil Change, 10% Off All Services, $50 Off Shield Leasing)
   - Sign-up form with proper validation and error handling
+- Page styling:
+  - Header and footer match React component styling for consistency
+  - Sticky white header with Delta Tire logo, navigation menu, mobile menu
+  - Dark footer with 4-column layout, social links, Tire Pros logo
+  - Fully responsive design matching site-wide patterns
 - Form implementation:
   - Blocks submission when Google Apps Script webhook not configured (shows alert)
   - Uses `mode: 'no-cors'` to bypass CORS restrictions with Google Apps Script
