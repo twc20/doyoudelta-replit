@@ -87,6 +87,16 @@ Delta Tire is a multi-location automotive service business operating across New 
   - Mobile header menu
 - Uses `tel:` and `sms:` protocols for native mobile integration
 
+**Contact Page Redesign**
+- Removed contact form (non-functional)
+- Replaced with location selector dialog for texting
+- Features:
+  - Prominent "Text Us Now" button that opens location selector popup
+  - Users select their nearest location and text directly via SMS
+  - Contact information cards showing phone numbers, locations, hours, and appointments link
+  - Consistent with SMS-based communication strategy across the site
+- No backend needed - fully client-side functionality
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
