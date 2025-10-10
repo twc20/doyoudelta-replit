@@ -18,6 +18,7 @@ Preferred communication style: Simple, everyday language.
 -   **Key Features**:
     -   Comprehensive service pages for tires, oil changes, brakes, alignment, auto repair, and truck accessories.
     -   Dedicated tire brands showcase with 18 major brands, categorized by price range.
+    -   Individual location pages for all 4 locations (Grants, Gallup, Farmington, Eagar) with local SEO optimization, structured data, and geo tags.
     -   Integrated blog with articles, category filtering, search, and individual article pages.
     -   SMS-based appointment booking system and "Call or Text Now" feature linking directly to location-specific contacts.
     -   Redesigned contact page emphasizing SMS communication.
