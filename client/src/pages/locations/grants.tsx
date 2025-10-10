@@ -6,7 +6,6 @@ import { Footer } from "@/components/shared/footer";
 import { ServicesGrid } from "@/components/shared/services-grid";
 import { TireBrands } from "@/components/shared/tire-brands";
 import { SEO } from "@/components/shared/seo";
-import { CallButton } from "@/components/shared/location-selector-dialog";
 
 const grantsLocationData = {
   "@context": "https://schema.org",
