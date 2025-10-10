@@ -6,6 +6,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import Services from "@/pages/services";
 import Locations from "@/pages/locations";
+import GrantsLocation from "@/pages/locations/grants";
+import GallupLocation from "@/pages/locations/gallup";
+import FarmingtonLocation from "@/pages/locations/farmington";
+import EagarLocation from "@/pages/locations/eagar";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
 import Appointments from "@/pages/appointments";
@@ -45,6 +49,10 @@ function Router() {
       <Route path="/blog/:slug" component={BlogArticle} />
       <Route path="/careers" component={Careers} />
       <Route path="/tire-pros-warranty" component={TireProsWarranty} />
+      <Route path="/locations/grants" component={GrantsLocation} />
+      <Route path="/locations/gallup" component={GallupLocation} />
+      <Route path="/locations/farmington" component={FarmingtonLocation} />
+      <Route path="/locations/eagar" component={EagarLocation} />
       <Route path="/locations" component={Locations} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
