@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 const locations = [
   {
@@ -9,7 +10,8 @@ const locations = [
     city: "Grants, NM 87020",
     phone: "(505) 287-7946",
     hours: "Monday - Friday: 7am - 5pm",
-    mapsUrl: "https://maps.google.com/maps?q=833+E+Sante+Fe+Ave,+Grants+NM+87020"
+    mapsUrl: "https://maps.google.com/maps?q=833+E+Sante+Fe+Ave,+Grants+NM+87020",
+    pageUrl: "/locations/grants"
   },
   {
     name: "Gallup", 
@@ -17,7 +19,8 @@ const locations = [
     city: "Gallup, NM 87301",
     phone: "(505) 722-2945",
     hours: "Monday - Saturday: 8am - 5pm",
-    mapsUrl: "https://maps.google.com/maps?q=501+US-491,+Gallup,+NM+87301"
+    mapsUrl: "https://maps.google.com/maps?q=501+US-491,+Gallup,+NM+87301",
+    pageUrl: "/locations/gallup"
   },
   {
     name: "Farmington",
@@ -25,7 +28,8 @@ const locations = [
     city: "Farmington, NM 87402",
     phone: "(505) 325-4500",
     hours: "Monday - Saturday: 8am - 5pm",
-    mapsUrl: "https://maps.google.com/maps?q=4650+E+Main+St,+Farmington,+NM+87402"
+    mapsUrl: "https://maps.google.com/maps?q=4650+E+Main+St,+Farmington,+NM+87402",
+    pageUrl: "/locations/farmington"
   },
   {
     name: "Eagar",
@@ -33,7 +37,8 @@ const locations = [
     city: "Eagar, AZ 85925", 
     phone: "(928) 333-3730",
     hours: "Monday - Friday: 8am - 5pm",
-    mapsUrl: "https://maps.google.com/maps?q=50+W+Central+Ave,+Eagar,+AZ+85925"
+    mapsUrl: "https://maps.google.com/maps?q=50+W+Central+Ave,+Eagar,+AZ+85925",
+    pageUrl: "/locations/eagar"
   }
 ];
 
@@ -66,30 +71,43 @@ export function LocationsGrid() {
                   <h4 className="font-medium text-gray-900 mb-1">Hours:</h4>
                   <p className="text-gray-600 text-sm">{location.hours}</p>
                 </div>
-                <div className="flex gap-2">
-                  <Button 
-                    size="sm" 
-                    className="bg-red-600 text-white hover:bg-red-700 flex-1" 
-                    asChild
-                    data-testid={`button-call-${location.name.toLowerCase()}`}
-                  >
-                    <a href={`tel:${location.phone}`}>
-                      <Phone className="w-4 h-4 mr-1" />
-                      Call
-                    </a>
-                  </Button>
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="flex-1" 
-                    asChild
-                    data-testid={`button-directions-${location.name.toLowerCase()}`}
-                  >
-                    <a href={location.mapsUrl} target="_blank" rel="noopener noreferrer">
-                      <MapPin className="w-4 h-4 mr-1" />
-                      Directions
-                    </a>
-                  </Button>
+                <div className="space-y-2">
+                  <Link href={location.pageUrl}>
+                    <Button 
+                      size="sm" 
+                      className="w-full bg-red-600 text-white hover:bg-red-700" 
+                      data-testid={`button-view-${location.name.toLowerCase()}`}
+                    >
+                      View Location Page
+                      <ArrowRight className="w-4 h-4 ml-1" />
+                    </Button>
+                  </Link>
+                  <div className="flex gap-2">
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="flex-1" 
+                      asChild
+                      data-testid={`button-call-${location.name.toLowerCase()}`}
+                    >
+                      <a href={`tel:${location.phone}`}>
+                        <Phone className="w-4 h-4 mr-1" />
+                        Call
+                      </a>
+                    </Button>
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="flex-1" 
+                      asChild
+                      data-testid={`button-directions-${location.name.toLowerCase()}`}
+                    >
+                      <a href={location.mapsUrl} target="_blank" rel="noopener noreferrer">
+                        <MapPin className="w-4 h-4 mr-1" />
+                        Directions
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
