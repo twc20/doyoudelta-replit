@@ -38,5 +38,6 @@ Preferred communication style: Simple, everyday language.
 -   **Form Validation**: Zod for runtime type validation, integrated with React Hook Form.
 -   **Styling & UI**: Tailwind CSS, Radix UI, Lucide React (icons), date-fns.
 -   **Google Integration**: Google Apps Script for VIP fundraising form submissions (webhook integration to Google Sheets and email notifications).
+-   **Analytics & Tracking**: Reachcode tracking script from LocaliQ (installed in global header for conversion tracking and marketing analytics).
 -   **Replit-Specific**: Runtime error overlay, Cartographer plugin, development banner, Replit Connectors for OAuth (GitHub).
 -   **Build Tools**: esbuild, tsx, Vite plugins.
